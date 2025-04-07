@@ -6,12 +6,16 @@ const alumniData = [
   {
     name: "Saatvik Pandey",
     title: "Organizing Coordinator",
-    image: "./Saatvik.jpg"
+    image: "./Saatvik.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/saatvik-pandey-4a0919287/",
+    instagramUrl: "https://www.instagram.com/saatvik_pandey/"
   },
   {
     name: "Parth Ganjewar",
     title: "Organizing Coordinator",
-    image: "./Parth.jpg"
+    image: "./Parth.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/parth-ganjewar-9b2317298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagramUrl: "https://www.instagram.com/parth__ganjewar?igsh=MWhuZ3JidWpjeXBzOA=="
   }
 ];
 
