@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import SceneCanvas from "../three/SceneCanvas";
 
+
 export default function AlumniRegistration() {
   const [formData, setFormData] = useState({
     name: '',
@@ -28,55 +29,35 @@ export default function AlumniRegistration() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
-    
+  
     try {
-      // Here you can implement the logic to submit the form data
-      // For example, send it to an API or email
-      
-      // Example: Create a formatted message for email
-      const subject = `Alumni Registration: ${formData.name}`;
-      const body = `
-        Name: ${formData.name}
-        Contact Number: ${formData.contactNo}
-        Email: ${formData.email}
-        Department/Branch: ${formData.department}
-        Year of Graduation: ${formData.graduationYear}
-        Organization/Startup Name: ${formData.organization}
-        Current Role/Designation: ${formData.role}
-        LinkedIn Profile URL: ${formData.linkedinUrl}
-      `;
-      
-      // Open mail client with pre-filled data
-      window.location.href = `mailto:saagarchaitanya80@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      
-      // Clear form
-      setFormData({
-        name: '',
-        contactNo: '',
-        email: '',
-        department: '',
-        graduationYear: '',
-        organization: '',
-        role: '',
-        linkedinUrl: ''
+      const response = await fetch('http://localhost:3001/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
       });
-      
-      setSubmitStatus({ success: true, message: 'Your email client has been opened. Please send the email to complete your registration.' });
+  
+      if (!response.ok) throw new Error('Failed to submit');
+  
+      setSubmitStatus({ success: true, message: 'Form submitted successfully!' });
+      setFormData({
+        name: '', contactNo: '', email: '', department: '',
+        graduationYear: '', organization: '', role: '', linkedinUrl: ''
+      });
     } catch (error) {
-      console.error('Error:', error);
-      setSubmitStatus({ success: false, message: 'Something went wrong. Please try again or contact us directly.' });
+      setSubmitStatus({ success: false, message: 'Something went wrong. Please try again.' });
     } finally {
       setIsSubmitting(false);
     }
   };
-
+  
   return (
     <main className="pt-20 min-h-screen bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white relative overflow-hidden">
       {/* Background elements for depth */}
       <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
       <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-700 opacity-5 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600 opacity-5 rounded-full blur-3xl"></div>
-      
+
       {/* Three.js canvas - behind content */}
       <div className="absolute inset-0 z-1">
         <SceneCanvas />
@@ -84,16 +65,16 @@ export default function AlumniRegistration() {
 
       {/* Background Logo */}
       <div className="absolute inset-0 flex items-center justify-center z-[1] pointer-events-none opacity-5">
-        <img 
-          src="/favicon.jpg" 
-          alt="Logo Background" 
+        <img
+          src="/favicon.jpg"
+          alt="Logo Background"
           className="w-1/2 max-w-[500px]"
         />
       </div>
-      
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-12">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -103,7 +84,7 @@ export default function AlumniRegistration() {
             Alumni Registration
           </span>
         </motion.h1>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -114,11 +95,11 @@ export default function AlumniRegistration() {
             Join our thriving alumni network and stay connected with E-Cell IIT Patna
           </p>
           <p className="text-md text-blue-200">
-            As part of our alumni network, you'll receive updates on E-Cell events, opportunities to mentor current students, 
+            As part of our alumni network, you'll receive updates on E-Cell events, opportunities to mentor current students,
             invitations to exclusive alumni gatherings, and the chance to collaborate with fellow entrepreneurs.
           </p>
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -132,14 +113,14 @@ export default function AlumniRegistration() {
               </p>
             </div>
           )}
-          
+
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-blue-200 mb-2">Full Name *</label>
-                <input 
-                  type="text" 
-                  id="name" 
+                <input
+                  type="text"
+                  id="name"
                   className="w-full px-4 py-3 bg-blue-950/50 border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   placeholder="Your full name"
                   value={formData.name}
@@ -147,12 +128,12 @@ export default function AlumniRegistration() {
                   required
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="contactNo" className="block text-blue-200 mb-2">Contact Number *</label>
-                <input 
-                  type="tel" 
-                  id="contactNo" 
+                <input
+                  type="tel"
+                  id="contactNo"
                   className="w-full px-4 py-3 bg-blue-950/50 border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   placeholder="Your phone number"
                   value={formData.contactNo}
@@ -161,12 +142,12 @@ export default function AlumniRegistration() {
                 />
               </div>
             </div>
-            
+
             <div>
               <label htmlFor="email" className="block text-blue-200 mb-2">Email Address *</label>
-              <input 
-                type="email" 
-                id="email" 
+              <input
+                type="email"
+                id="email"
                 className="w-full px-4 py-3 bg-blue-950/50 border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                 placeholder="your.email@example.com"
                 value={formData.email}
@@ -174,13 +155,13 @@ export default function AlumniRegistration() {
                 required
               />
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="department" className="block text-blue-200 mb-2">Department/Branch *</label>
-                <input 
-                  type="text" 
-                  id="department" 
+                <input
+                  type="text"
+                  id="department"
                   className="w-full px-4 py-3 bg-blue-950/50 border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   placeholder="e.g. Computer Science, Electrical Engineering"
                   value={formData.department}
@@ -188,12 +169,12 @@ export default function AlumniRegistration() {
                   required
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="graduationYear" className="block text-blue-200 mb-2">Year of Graduation *</label>
-                <input 
-                  type="text" 
-                  id="graduationYear" 
+                <input
+                  type="text"
+                  id="graduationYear"
                   className="w-full px-4 py-3 bg-blue-950/50 border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   placeholder="e.g. 2022"
                   value={formData.graduationYear}
@@ -202,13 +183,13 @@ export default function AlumniRegistration() {
                 />
               </div>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="organization" className="block text-blue-200 mb-2">Organization/Startup Name *</label>
-                <input 
-                  type="text" 
-                  id="organization" 
+                <input
+                  type="text"
+                  id="organization"
                   className="w-full px-4 py-3 bg-blue-950/50 border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   placeholder="Where you currently work"
                   value={formData.organization}
@@ -216,12 +197,12 @@ export default function AlumniRegistration() {
                   required
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="role" className="block text-blue-200 mb-2">Current Role/Designation *</label>
-                <input 
-                  type="text" 
-                  id="role" 
+                <input
+                  type="text"
+                  id="role"
                   className="w-full px-4 py-3 bg-blue-950/50 border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   placeholder="e.g. Software Engineer, Founder"
                   value={formData.role}
@@ -230,12 +211,12 @@ export default function AlumniRegistration() {
                 />
               </div>
             </div>
-            
+
             <div>
               <label htmlFor="linkedinUrl" className="block text-blue-200 mb-2">LinkedIn Profile URL *</label>
-              <input 
-                type="url" 
-                id="linkedinUrl" 
+              <input
+                type="url"
+                id="linkedinUrl"
                 className="w-full px-4 py-3 bg-blue-950/50 border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                 placeholder="https://www.linkedin.com/in/yourprofile"
                 value={formData.linkedinUrl}
@@ -243,10 +224,10 @@ export default function AlumniRegistration() {
                 required
               />
             </div>
-            
+
             <div className="pt-4">
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className={`px-6 py-3 bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 w-full flex justify-center items-center ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                 disabled={isSubmitting}
               >
