@@ -33,7 +33,7 @@ export default function About() {
           className="text-4xl md:text-5xl font-bold mb-8 text-center"
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-purple-400 to-blue-400">
-            About E-Cell Alumni Connect
+            About E-Cell Alumni Relations
           </span>
         </motion.h1>
         
