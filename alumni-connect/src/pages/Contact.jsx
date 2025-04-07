@@ -1,8 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import SceneCanvas from "../three/SceneCanvas";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+    
+    try {
+      // Create mailto link with form data
+      const subject = `Contact from ${formData.name}`;
+      const body = `
+        Name: ${formData.name}
+        Email: ${formData.email}
+        
+        Message:
+        ${formData.message}
+      `;
+      
+      // Open mail client with pre-filled data
+      window.location.href = `mailto:saagarchaitanya80@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Clear form
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+      
+      setSubmitStatus({ success: true, message: 'Your email client has been opened. Please send the email to complete your message.' });
+    } catch (error) {
+      console.error('Error:', error);
+      setSubmitStatus({ success: false, message: 'Something went wrong. Please try again or contact us directly.' });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <main className="pt-20 min-h-screen bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white relative overflow-hidden">
       {/* Background elements for depth */}
@@ -60,7 +111,15 @@ export default function Contact() {
               </span>
             </h2>
             
-            <form className="space-y-6">
+            {submitStatus && (
+              <div className={`p-4 mb-6 rounded-lg ${submitStatus.success ? 'bg-green-900/50 border border-green-700' : 'bg-red-900/50 border border-red-700'}`}>
+                <p className={`text-sm ${submitStatus.success ? 'text-green-200' : 'text-red-200'}`}>
+                  {submitStatus.message}
+                </p>
+              </div>
+            )}
+            
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-blue-200 mb-2">Name</label>
                 <input 
@@ -68,6 +127,9 @@ export default function Contact() {
                   id="name" 
                   className="w-full px-4 py-3 bg-blue-950/50 border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   placeholder="Your name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
                 />
               </div>
               
@@ -78,6 +140,9 @@ export default function Contact() {
                   id="email" 
                   className="w-full px-4 py-3 bg-blue-950/50 border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   placeholder="your.email@example.com"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                 />
               </div>
               
@@ -88,14 +153,26 @@ export default function Contact() {
                   rows="5" 
                   className="w-full px-4 py-3 bg-blue-950/50 border border-blue-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   placeholder="Your message..."
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
                 ></textarea>
               </div>
               
               <button 
                 type="submit" 
-                className="px-6 py-3 bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 w-full"
+                className={`px-6 py-3 bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 w-full flex justify-center items-center ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                disabled={isSubmitting}
               >
-                Send Message
+                {isSubmitting ? (
+                  <span className="flex items-center">
+                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Processing...
+                  </span>
+                ) : 'Send Message'}
               </button>
             </form>
           </motion.div>
@@ -123,7 +200,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-blue-300">Email</h3>
-                    <p className="text-blue-200">alumni@ecell.org</p>
+                    <p className="text-blue-200">saagarchaitanya80@gmail.com</p>
                   </div>
                 </div>
                 
