@@ -6,7 +6,7 @@ A modern, interactive web portal to connect alumni with the E-Cell community —
 
 ## 🌐 Live Demo
 
-**Coming soon...**
+[https://e-cell-alumni-connect.vercel.app/]
 
 ---
 
