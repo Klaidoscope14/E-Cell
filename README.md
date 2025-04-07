@@ -19,7 +19,7 @@ A modern, interactive web portal to connect alumni with the E-Cell community —
 | Three.js + Fiber | 3D scenes and effects                        |
 | Framer Motion    | Smooth animations and transitions            |
 | Vite             | Fast bundler and development server          |
-| JavaScript       | Core language (no TypeScript used here)      |
+| JavaScript       | Core language       |
 
 ---
 
@@ -44,9 +44,7 @@ src/
 ├── sections/           # Hero, Alumni Grid, Footer
 └── three/              # All 3D-related files
     ├── SceneCanvas.jsx
-    ├── FloatingCube.jsx
     ├── ParticleField.jsx
-    └── LogoPlane.jsx
 ```
 
 ---
