@@ -17,7 +17,7 @@ export default function Navbar() {
         transition={{ duration: 0.5 }}
         className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-blue-400"
       >
-        <Link to="/">E-Cell Alumni Connect</Link>
+        <Link to="/">E-Cell Alumni Relations</Link>
       </motion.h1>
       
       <motion.ul 
