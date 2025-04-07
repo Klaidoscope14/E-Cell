@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SceneCanvas from "../three/SceneCanvas";
+import { Link } from 'react-router-dom';
 
 export default function Alumni() {
   // Sample alumni data
@@ -122,9 +123,12 @@ export default function Alumni() {
               We're currently compiling our complete alumni database. Check back soon to connect with even more fellow E-Cell alumni!
             </p>
             
-            <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105">
-              <a href='https://forms.gle/hpkoKLsYjgjdgEoWA'>Register as Alumni</a>
-            </button>
+            <Link 
+              to="/alumni-registration" 
+              className="px-6 py-3 bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 inline-block"
+            >
+              Register as Alumni
+            </Link>
           </div>
         </motion.div>
       </div>
