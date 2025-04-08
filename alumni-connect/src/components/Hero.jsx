@@ -27,7 +27,7 @@ export default function Hero() {
             className="text-6xl md:text-7xl font-bold mb-4 tracking-tight"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-purple-400 to-blue-400">
-              E-Cell Alumni Ambassador
+              E-Cell Alumni Emissary
             </span>
           </motion.h1>
           

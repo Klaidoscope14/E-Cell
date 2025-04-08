@@ -32,7 +32,7 @@ export default function Footer() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-center text-sm text-blue-200/60"
           >
-            © 2025 E-Cell Alumni Connect. All rights reserved.
+            © 2025 E-Cell Alumni Relations. All rights reserved.
           </motion.div>
           
           {/* Social media icons center */}

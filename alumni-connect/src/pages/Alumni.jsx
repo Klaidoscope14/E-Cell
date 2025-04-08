@@ -73,7 +73,7 @@ export default function Alumni() {
         </motion.p>
         
         {/* Featured Alumni */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -108,7 +108,7 @@ export default function Alumni() {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
         
         {/* Alumni Directory Coming Soon */}
         <motion.div
@@ -127,7 +127,7 @@ export default function Alumni() {
               to="/alumni-registration" 
               className="px-6 py-3 bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 inline-block"
             >
-              Register as Alumni
+              Register as Alumni Emissary
             </Link>
           </div>
         </motion.div>
