@@ -8,7 +8,7 @@ const alumniData = [
     title: "Organizing Coordinator",
     image: "./Saatvik.jpg",
     linkedinUrl: "https://www.linkedin.com/in/saatvik-pandey-4a0919287/",
-    instagramUrl: "https://www.instagram.com/saatvik_pandey/"
+    instagramUrl: "https://www.instagram.com/saatvikpandey05?igsh=MXIzd2ptZ2txeHB0MA=="
   },
   {
     name: "Parth Ganjewar",
