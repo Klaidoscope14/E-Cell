@@ -23,17 +23,6 @@ A modern, interactive web portal to connect alumni with the E-Cell community —
 
 ---
 
-## Features
-
-* 🎓 Interactive Alumni Grid
-* 🎥 3D Animated Background (Three.js)
-* 💫 Responsive, Glassmorphic Hero
-* 🎨 Clean UI with Tailwind CSS
-* ✨ Animated Sections using Framer Motion
-* 📱 Fully Responsive on all screens
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -82,13 +71,7 @@ npm run build
 
 ---
 
-## 📌 Notes
-
-* Make sure `logo.png` is placed inside the `/public/` folder if using the logo in Three.js.
-
----
-
-## 👌 Contributing
+## Contributing
 
 Pull requests are welcome! Let’s grow the E-Cell alumni network together.
 
