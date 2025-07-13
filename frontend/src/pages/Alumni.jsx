@@ -32,31 +32,7 @@ export default function Alumni() {
       image: "https://randomuser.me/api/portraits/women/68.jpg"
     }
   ];
-
-
-
-  const contentCards = [
-    {
-      icon: '🚀',
-      title: 'Inspire',
-      description: 'We connect aspiring entrepreneurs with leaders, including our alumni, through speaker sessions, workshops, and competitions, inspiring innovative thinking and startup dreams.'
-    },
-    {
-      icon: '🛠️',
-      title: 'Learn-by-Doing',
-      description: 'Through hackathons, startup weekends, and pitch events, we provide hands-on experience and practical skills to build and scale ideas.'
-    },
-    {
-      icon: '🌍',
-      title: 'Impact',
-      description: 'Our alumni play a crucial role in mentoring, funding, and supporting the next generation of IITP entrepreneurs, driving meaningful change in the entrepreneurial ecosystem.'
-    }
-  ];
-
-
-
-
-
+  
   return (
     <main className="relative pt-20 min-h-screen text-white overflow-hidden">
       {/* Fixed Background */}
