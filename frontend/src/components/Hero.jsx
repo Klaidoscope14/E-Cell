@@ -85,6 +85,36 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
+     {/* ✨ Sleek Shining Down Arrow */}
+<motion.div
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 1.2 }}
+  className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10 cursor-pointer"
+>
+  <a href="#mission-vision" className="group">
+    <motion.svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-7 h-7 text-white group-hover:text-blue-400 transition-colors duration-300"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+      animate={{
+        opacity: [0.7, 1, 0.7],
+        scale: [1, 1.2, 1],
+      }}
+      transition={{
+        duration: 2,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+    </motion.svg>
+  </a>
+</motion.div>
+
     </section>
   );
 }

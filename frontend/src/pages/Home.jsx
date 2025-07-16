@@ -1,6 +1,13 @@
 import AlumniGrid from "../sections/AlumniGrid";
 import Hero from "../components/Hero";
+import MissionVision from "../components/MissionVision";
 import React from 'react';
+import Achievements from "../components/Achievements";
+import { Stats } from "@react-three/drei";
+import { Speaker } from "lucide-react";
+import Speakers from "../components/Speakers";
+import TeamPhoto from "../components/TeamPhoto";
+import IncubationCenter from "../components/IncubationCenter";
 
 export default function Home() {
   return (
@@ -16,7 +23,12 @@ export default function Home() {
 
       <div className="relative z-[5]">
         <Hero />
-        <AlumniGrid />
+        <MissionVision />
+        <IncubationCenter />
+        <Achievements />
+        <Speakers />
+        <TeamPhoto />
+        
       </div>
     </main>
   );
