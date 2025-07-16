@@ -1,8 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { TrendingUp, Globe, Rocket, Star } from "lucide-react";
-import { useRef, useState, useEffect, useMemo } from "react";
+import { useRef, useState, useEffect } from "react";
 
-// Moved CountUp outside for better performance
 const CountUp = ({ end, suffix, duration = 2, isInView }) => {
   const [count, setCount] = useState(0);
   const hasAnimated = useRef(false);
