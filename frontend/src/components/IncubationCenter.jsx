@@ -81,7 +81,7 @@ export default function IncubationCenter() {
         >
           <div className="absolute inset-0 rounded-2xl animate-pulse blur-xl bg-gradient-to-br from-blue-500/30 to-fuchsia-500/30 z-0" />
           <img
-            src="/IC.png"
+            src=""
             alt="Incubation Center"
             className="relative rounded-2xl shadow-2xl border border-white/10 w-full h-auto object-cover z-10"
           />
