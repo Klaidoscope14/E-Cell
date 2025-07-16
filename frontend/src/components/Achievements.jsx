@@ -1,7 +1,6 @@
 import { motion, useInView } from "framer-motion";
-import { Trophy, TrendingUp, Globe, Rocket, Star, Award } from "lucide-react";
+import { TrendingUp, Globe, Rocket, Star } from "lucide-react";
 import { useRef, useState, useEffect, useMemo } from "react";
-import SceneCanvas from "../three/SceneCanvas";
 
 // Moved CountUp outside for better performance
 const CountUp = ({ end, suffix, duration = 2, isInView }) => {
