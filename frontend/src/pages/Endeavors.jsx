@@ -322,7 +322,11 @@ const StatsSection = () => {
       variants={staggerContainer}
       className="py-32 relative"
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-800/60 to-slate-900/80" />
+      <div className="absolute inset-0" />
+
+      <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
+      <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-700 opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600 opacity-5 rounded-full blur-3xl"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div variants={fadeInUp} className="text-center mb-20">
@@ -387,8 +391,11 @@ const Endeavors = () => {
         <SceneCanvas />
       </div>
 
-      {/* Background Overlay */}
-      <div className="fixed inset-0 z-10 bg-gradient-to-br from-slate-900/60 via-slate-800/40 to-slate-900/60" />
+      <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
+      <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-700 opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600 opacity-5 rounded-full blur-3xl"></div>
+
+      
 
       {/* Content */}
       <div className="relative z-20">
@@ -399,7 +406,7 @@ const Endeavors = () => {
           transition={{ duration: 1 }}
           className="relative min-h-screen flex items-center justify-center overflow-hidden"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-slate-800/50 to-slate-900/70" />
+          <div className="absolute inset-0" />
           
           <div className="relative z-10 text-center max-w-6xl mx-auto px-6 lg:px-8">
             <motion.div
