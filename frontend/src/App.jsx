@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Alumni from "./pages/Alumni";
 import Contact from "./pages/Contact";
+import Endeavors from "./pages/Endeavors";
 import Footer from "./sections/Footer";
 import AlumniRegistration from "./pages/AlumniRegistration";
 import Team from "./pages/Team";
@@ -22,6 +23,7 @@ function AppContent() {
         <Route path="/alumni" element={<Alumni />} />
         <Route path="/alumni-registration" element={<AlumniRegistration />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/endeavors" element={<Endeavors />} />
         <Route path="/team" element={<Team />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
