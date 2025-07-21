@@ -1,5 +1,5 @@
 import { motion, useInView } from "framer-motion";
-import { Lightbulb, Eye, Sparkles, Target } from "lucide-react";
+import { Lightbulb, Eye, Sparkles } from "lucide-react";
 import { useRef } from "react";
 
 export default function MissionVision() {
@@ -80,29 +80,22 @@ export default function MissionVision() {
   return (
     <section id="mission-vision" className="min-h-screen flex items-center justify-center bg-transparent px-6 md:px-20 py-16 relative overflow-hidden">
 
-  {/* 🌌 Static Dark Blue Background */}
-<div className="absolute inset-0 z-0 bg-[#0f172a]" />
-
-
-      
-      {/* 🎨 Organic Animated Blobs Background */}
-<div className="absolute inset-0 z-0 overflow-hidden">
-  {/* Blob 1 */}
-  <motion.div
-    className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-blue-600 opacity-20 rounded-full mix-blend-multiply blur-2xl animate-blob"
-    animate={{ 
-      x: [0, 50, -30, 0], 
-      y: [0, -40, 20, 0], 
-      scale: [1, 1.2, 0.9, 1] 
-    }}
-    transition={{
-      duration: 20,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }}
-  />
+  <div className="absolute inset-0 z-0 bg-[#0f172a]" />
+    <div className="absolute inset-0 z-0 overflow-hidden">
+    <motion.div
+      className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-blue-600 opacity-20 rounded-full mix-blend-multiply blur-2xl animate-blob"
+      animate={{ 
+        x: [0, 50, -30, 0], 
+        y: [0, -40, 20, 0], 
+        scale: [1, 1.2, 0.9, 1] 
+      }}
+      transition={{
+        duration: 20,
+        repeat: Infinity,
+        ease: "easeInOut"
+      }}
+    />
   
-  {/* Blob 2 */}
   <motion.div
     className="absolute bottom-[-120px] right-[-100px] w-[450px] h-[450px] bg-purple-600 opacity-20 rounded-full mix-blend-multiply blur-2xl animate-blob"
     animate={{ 
@@ -118,7 +111,6 @@ export default function MissionVision() {
   />
 </div>
 
-      {/* Floating Sparkles */}
       {[...Array(8)].map((_, i) => (
         <motion.div
           key={i}
@@ -149,31 +141,28 @@ export default function MissionVision() {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        {/* Animated Title */}
         <motion.div variants={titleVariants} className="mb-20 relative">
           <motion.h2 
-  className="text-4xl md:text-6xl font-extrabold text-white tracking-tight relative inline-block"
-  variants={titleVariants}
->
-  Our{" "}
-  <motion.span 
-    className="relative inline-block bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-orange-300 to-red-300"
-    whileHover={{ scale: 1.1 }}
-    transition={{ duration: 0.3 }}
-  >
-    Mission
-   
-  </motion.span>
-  {" "}&{" "}
-  <motion.span 
-    className="relative inline-block bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-orange-300 to-red-300"
-    whileHover={{ scale: 1.1 }}
-    transition={{ duration: 0.3 }}
-  >
-    Vision
-  </motion.span>
-</motion.h2>
-
+          className="text-4xl md:text-6xl font-extrabold text-white tracking-tight relative inline-block"
+          variants={titleVariants}>
+          Our{" "}
+          <motion.span 
+            className="relative inline-block bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-orange-300 to-red-300"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          >
+            Mission
+          
+          </motion.span>
+          {" "}&{" "}
+          <motion.span 
+            className="relative inline-block bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-orange-300 to-red-300"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          >
+            Vision
+          </motion.span>
+        </motion.h2>
           
           {/* Animated underline */}
           <motion.div
