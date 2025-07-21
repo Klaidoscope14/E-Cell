@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import AlumniCard from '../components/AlumniCard';
 import SceneCanvas from "../three/SceneCanvas";
 import { motion } from "framer-motion";
@@ -30,6 +30,13 @@ const Heads = [
     email: "mailto:ipshita_2301cb17@iitp.ac.in"
   },
   {
+    name: "Chaitanya Saagar",
+    title: "Web Development & Tech",
+    image: "./Chaitanya.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/chaitanya-saagar-476b562a2/",
+    email: "mailto:chaitanya_2301cs77@iitp.ac.in"
+  },
+  {
     name: "Prajyot Khandade",
     title: "Sponsorship & Marketing",
     image: "./Prajyot.jpg",
@@ -42,6 +49,13 @@ const Heads = [
     image: "./Ajay.jpg",
     linkedinUrl: "https://www.linkedin.com/in/ajay-kumar-saini-44b99a284/",
     email: "mailto:ajay_2301mm03@iitp.ac.in"
+  },
+  {
+    name: "Aditya Mittal",
+    title: "Events & Startup Relations",
+    image: "./Mittal.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/adityamittalddn223/",
+    email: "mailto:aditya_2301ph02@iitp.ac.in"
   },
   {
     name: "Tushar Garg",
