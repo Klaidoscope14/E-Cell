@@ -6,7 +6,7 @@ A modern, interactive web portal to connect alumni with the E-Cell community —
 
 ## 🌐 Live Demo
 
-\[[https://e-cell-steel.vercel.app/](https://e-cell-steel.vercel.app/)]
+\[[https://e-cell-steel.vercel.app/](Live Site)]
 
 ---
 
