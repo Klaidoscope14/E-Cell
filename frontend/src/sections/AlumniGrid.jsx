@@ -23,18 +23,25 @@ const OrgCoords = [
 
 const Heads = [
   {
-    name: "Ipshita Gawande",
-    title: "Sponsorship & Marketing",
-    image: "./Ipshita.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/ipshita-gawande-a9a519298",
-    email: "mailto:ipshita_2301cb17@iitp.ac.in"
-  },
-  {
     name: "Chaitanya Saagar",
     title: "Web Development & Tech",
     image: "./Chaitanya.jpeg",
     linkedinUrl: "https://www.linkedin.com/in/chaitanya-saagar-476b562a2/",
     email: "mailto:chaitanya_2301cs77@iitp.ac.in"
+  },
+  {
+    name: "Sujal Suryawanshi",
+    title: "Web Development & Tech",
+    image: "./Sujal.jpg",
+    linkedinUrl: "https://linkedin.com/in/sujal-suryawanshi-898916290/",
+    email: "mailto:sujal_2301ai26@iitp.ac.in"
+  },
+  {
+    name: "Ipshita Gawande",
+    title: "Sponsorship & Marketing",
+    image: "./Ipshita.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/ipshita-gawande-a9a519298",
+    email: "mailto:ipshita_2301cb17@iitp.ac.in"
   },
   {
     name: "Prajyot Khandade",
@@ -98,6 +105,30 @@ const Heads = [
     image: "./Sameeksha.jpg",
     linkedinUrl: "https://www.linkedin.com/in/sameeksha-madhav-nagulwad-262776365",
     email: "mailto:sameeksha_2301ec23@iitp.ac.in"
+  },
+];
+
+const Managers = [
+  {
+    name: "Krish Goyal",
+    title: "Web Development & Tech",
+    image: "./Krish.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/krish-goyal-6a5362315",
+    email: "mailto:krish_2401ec13@iitp.ac.in"
+  },
+  {
+    name: "Prashant Raj",
+    title: "Web Development & Tech",
+    image: "./Prashant.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/prashant-raj-710845318",
+    email: "mailto:prashant_2401cs04@iitp.ac.in"
+  },
+  {
+    name: "Riddhi Rajani",
+    title: "Web Development & Tech",
+    image: "./Riddhi.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/riddhi-r-15a4b2248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    email: "mailto:riddhi_2401me75@iitp.ac.in"
   },
 ];
 
@@ -183,6 +214,14 @@ export default function AlumniGrid() {
         <CardSection
           title="Meet Our Heads"
           people={Heads}
+          useGrid
+          hoveredId={hoveredId}
+          setHoveredId={setHoveredId}
+        />
+        <div className="mt-24" />
+        <CardSection
+          title="Meet Our Managers"
+          people={Managers}
           useGrid
           hoveredId={hoveredId}
           setHoveredId={setHoveredId}
