@@ -23,6 +23,13 @@ const OrgCoords = [
 
 const Heads = [
   {
+    name: "Sujal Suryawanshi",
+    title: "Web Development & Tech",
+    image: "./Sujal.jpg",
+    linkedinUrl: "https://linkedin.com/in/sujal-suryawanshi-898916290/",
+    email: "mailto:sujal_2301ai26@iitp.ac.in"
+  },
+  {
     name: "Chaitanya Saagar",
     title: "Web Development & Tech",
     image: "./Chaitanya.jpeg",
@@ -30,11 +37,11 @@ const Heads = [
     email: "mailto:chaitanya_2301cs77@iitp.ac.in"
   },
   {
-    name: "Sujal Suryawanshi",
-    title: "Web Development & Tech",
-    image: "./Sujal.jpg",
-    linkedinUrl: "https://linkedin.com/in/sujal-suryawanshi-898916290/",
-    email: "mailto:sujal_2301ai26@iitp.ac.in"
+    name: "Aditya Mittal",
+    title: "Events & Startup Relations",
+    image: "./Mittal.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/adityamittalddn223/",
+    email: "mailto:aditya_2301ph02@iitp.ac.in"
   },
   {
     name: "Ipshita Gawande",
@@ -56,13 +63,6 @@ const Heads = [
     image: "./Ajay.jpg",
     linkedinUrl: "https://www.linkedin.com/in/ajay-kumar-saini-44b99a284/",
     email: "mailto:ajay_2301mm03@iitp.ac.in"
-  },
-  {
-    name: "Aditya Mittal",
-    title: "Events & Startup Relations",
-    image: "./Mittal.jpeg",
-    linkedinUrl: "https://www.linkedin.com/in/adityamittalddn223/",
-    email: "mailto:aditya_2301ph02@iitp.ac.in"
   },
   {
     name: "Tushar Garg",

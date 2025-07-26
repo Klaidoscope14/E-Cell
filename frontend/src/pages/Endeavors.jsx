@@ -169,12 +169,12 @@ const FeaturedEndeavor = ({ endeavor, index }) => {
 
             {/* Action Buttons */}
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
-              <button className={`px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r ${endeavor.color} hover:shadow-lg hover:shadow-${endeavor.accentColor}-500/25 transition-all duration-300 transform hover:scale-105`}>
+              {/* <button className={`px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r ${endeavor.color} hover:shadow-lg hover:shadow-${endeavor.accentColor}-500/25 transition-all duration-300 transform hover:scale-105`}>
                 Learn More
-              </button>
-              <button className="px-8 py-4 rounded-full font-semibold text-white bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300">
+              </button> */}
+              {/* <button className="px-8 py-4 rounded-full font-semibold text-white bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300">
                 Register Now
-              </button>
+              </button> */}
             </motion.div>
 
             {/* Next Event */}
