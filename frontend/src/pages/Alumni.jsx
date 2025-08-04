@@ -4,6 +4,10 @@ import SceneCanvas from "../three/SceneCanvas";
 import { Link } from 'react-router-dom';
 import AlumniCard from "../components/AlumniCard";
 import AlumniHero from '../components/AlumniHero';
+import haren from "../assets/haren.png"
+import chirag from "../assets/chirag.png"
+import ram from "../assets/ram.png"
+import prashant from "../assets/prashant.png"
 
 export default function Alumni() {
   const [RegisterAlumni, setRegisterAlumni] = useState(false);
@@ -12,27 +16,39 @@ export default function Alumni() {
   const featuredAlumni = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      year: "Class of 2018",
-      title: "Founder & CEO at TechInnovate",
-      image: "https://randomuser.me/api/portraits/women/32.jpg"
+      name: "Haren Chelle",
+      year: "Class of 2016",
+      title: "Co-founder & CEO at Pulse",
+      image: haren,
+      linkedinUrl: "https://www.linkedin.com/in/harenchelle/"
     },
     {
       id: 2,
-      name: "Michael Chen",
-      year: "Class of 2017",
-      title: "Product Lead at Google",
-      image: "https://randomuser.me/api/portraits/men/44.jpg"
+      name: "Chirag Wadhera",
+      year: "Class of 2019",
+      title: "Co-founder & CTO at Revspot",
+      image: chirag,
+      linkedinUrl: "https://www.linkedin.com/in/chiragw15/"
     },
     {
       id: 3,
-      name: "Priya Sharma",
-      year: "Class of 2019",
-      title: "Co-founder at EduStart",
-      image: "https://randomuser.me/api/portraits/women/68.jpg"
-    }
+      name: "Ram Agarwal",
+      year: "Class of 2017",
+      title: "Co-Founder and CFO at Raspa Pharma",
+      image: ram,
+      linkedinUrl: "https://www.linkedin.com/in/ram001/"
+    },
+    {
+      id: 4,
+      name: "Prashant Baghel",
+      year: "Class of 2017",
+      title: "Co-founder at Radical Health",
+      image: prashant,
+      linkedinUrl: "https://www.linkedin.com/in/baghelprashant/"
+    },  
+
   ];
-  
+
   return (
     <main className="relative pt-20 min-h-screen text-white overflow-hidden">
       {/* Fixed Background */}
@@ -59,7 +75,7 @@ export default function Alumni() {
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-purple-400 to-blue-400">WHO WE ARE ?</span>
         </motion.h1>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -91,35 +107,35 @@ export default function Alumni() {
         >
           Connect with our exceptional alumni who have gone on to make significant impacts in various fields.
         </motion.p>
-        
+
 
         {/* alumni cards start here */}
-    {/*
+
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="flex 
         flex-wrap justify-center gap-6 mt-8">
           {featuredAlumni.map((alumni) => (
-            <AlumniCard key={alumni.id} name={alumni.name} year={alumni.year} title={alumni.title} image={alumni.image} />
+            <AlumniCard key={alumni.id} name={alumni.name} year={alumni.year} title={alumni.title} image={alumni.image} linkedinUrl={alumni.linkedinUrl} />
           ))}
         </motion.div>
-  */}
+
 
         {/* alumni card end here */}
-  {/*
+
         <div className="text-center mb-12">
           <button onClick={() => setRegisterAlumni(true)} className="text-xl font-semibold text-white hover:underline transition mt-8">
             REGISTER AS ALUMNI →
           </button>
         </div>
-  */}
+
         {/* Alumni Directory Coming Soon */}
 
 
         {/*register Alumni starts here*/}
 
-          
 
-        {/* {RegisterAlumni && ( */}
-        {(true ||RegisterAlumni) && (
+
+        {RegisterAlumni && (
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -140,7 +156,7 @@ export default function Alumni() {
                 Register as Alumni Emissary
               </Link>
             </div>
-        </motion.div>
+          </motion.div>
         )}
 
         {/*register alumni ends here*/}
