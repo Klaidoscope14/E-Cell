@@ -26,7 +26,7 @@ export default function Navbar() {
         transition={{ duration: 0.5 }}
         className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-blue-400"
       >
-        <Link to="/">E-Cell Alumni Relations</Link>
+        <Link to="/">E-Cell</Link>
       </motion.h1>
 
       {/* Desktop Menu */}
@@ -41,7 +41,7 @@ export default function Navbar() {
             key={item.name}
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.05 * index }}
+            transition={{ duration: 0.3, delay: 0.1 * index }}
             whileHover={{ scale: 1.1, y: -3 }}
           >
             <Link
@@ -60,9 +60,9 @@ export default function Navbar() {
       <div className="md:hidden">
         <button onClick={toggleMenu} aria-label="Toggle Menu">
           {isOpen ? (
-            <X className="w-8 h-8 text-white" />
+            <X className="w-8 h-8 text-white  hover:text-orange-400 transition-colors duration-300" />
           ) : (
-            <Menu className="w-8 h-8 text-white" />
+            <Menu className="w-8 h-8 text-white  hover:text-orange-400 transition-colors duration-300" />
           )}
         </button>
       </div>
@@ -75,7 +75,7 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="absolute top-full left-0 right-0 bg-black bg-opacity-70 backdrop-blur-md text-white px-6 py-4 flex flex-col gap-4 md:hidden"
+            className="w-44 absolute top-full  right-0 bg-black bg-opacity-70 backdrop-blur-md text-white px-6 py-4 flex flex-col gap-4 md:hidden"
           >
             {navItems.map((item, index) => (
               <motion.div
@@ -84,11 +84,12 @@ export default function Navbar() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.05 * index }}
                 whileHover={{ scale: 1.05 }}
+                className="flex justify-center items-center"
               >
                 <Link
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className="block text-lg hover:text-orange-400 transition-colors duration-300 relative group"
+                  className="w-fit flex justify-center text-lg px-2 hover:text-orange-400 transition-colors duration-300 relative group"
                 >
                   {item.name}
                   <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-gradient-to-r from-orange-400 to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
