@@ -18,7 +18,7 @@ export default function Alumni() {
       id: 1,
       name: "Haren Chelle",
       year: "Class of 2016",
-      title: "Co-founder & CEO at Pulse",
+      title: "Co-founder & CEO at\nPulse",
       image: haren,
       linkedinUrl: "https://www.linkedin.com/in/harenchelle/"
     },
@@ -26,7 +26,7 @@ export default function Alumni() {
       id: 2,
       name: "Chirag Wadhera",
       year: "Class of 2019",
-      title: "Co-founder & CTO at Revspot",
+      title: "Co-founder & CTO at\nRevspot",
       image: chirag,
       linkedinUrl: "https://www.linkedin.com/in/chiragw15/"
     },
@@ -34,7 +34,7 @@ export default function Alumni() {
       id: 3,
       name: "Ram Agarwal",
       year: "Class of 2017",
-      title: "Co-Founder and CFO at Raspa Pharma",
+      title: "Co-Founder & CFO at\nRaspa Pharma",
       image: ram,
       linkedinUrl: "https://www.linkedin.com/in/ram001/"
     },
@@ -42,7 +42,7 @@ export default function Alumni() {
       id: 4,
       name: "Prashant Baghel",
       year: "Class of 2017",
-      title: "Co-founder at Radical Health",
+      title: "Co-founder at\nRadical Health",
       image: prashant,
       linkedinUrl: "https://www.linkedin.com/in/baghelprashant/"
     },  

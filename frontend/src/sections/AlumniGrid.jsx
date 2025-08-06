@@ -44,27 +44,6 @@ const Heads = [
     email: "mailto:aditya_2301ph02@iitp.ac.in"
   },
   {
-    name: "Ipshita Gawande",
-    title: "Sponsorship & Marketing",
-    image: "./Ipshita.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/ipshita-gawande-a9a519298",
-    email: "mailto:ipshita_2301cb17@iitp.ac.in"
-  },
-  {
-    name: "Prajyot Khandade",
-    title: "Sponsorship & Marketing",
-    image: "./Prajyot.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/prajyot-khandade-091a94280",
-    email: "mailto:prajyot_2301ct14@iitp.ac.in"
-  },
-  {
-    name: "Ajay Kumar Saini",
-    title: "Sponsorship & Marketing",
-    image: "./Ajay.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/ajay-kumar-saini-44b99a284/",
-    email: "mailto:ajay_2301mm03@iitp.ac.in"
-  },
-  {
     name: "Tushar Garg",
     title: "Events & Startup Relations",
     image: "./Tushar.jpg",
@@ -84,6 +63,27 @@ const Heads = [
     image: "./Tejas.jpg",
     linkedinUrl: "https://www.linkedin.com/in/tejas-jadhav-5a1b202a8",
     email: "mailto:tejas_2301cb64@iitp.ac.in"
+  },
+  {
+    name: "Ipshita Gawande",
+    title: "Sponsorship & Marketing",
+    image: "./Ipshita.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/ipshita-gawande-a9a519298",
+    email: "mailto:ipshita_2301cb17@iitp.ac.in"
+  },
+  {
+    name: "Prajyot Khandade",
+    title: "Sponsorship & Marketing",
+    image: "./Prajyot.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/prajyot-khandade-091a94280",
+    email: "mailto:prajyot_2301ct14@iitp.ac.in"
+  },
+  {
+    name: "Ajay Kumar Saini",
+    title: "Sponsorship & Marketing",
+    image: "./Ajay.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/ajay-kumar-saini-44b99a284/",
+    email: "mailto:ajay_2301mm03@iitp.ac.in"
   },
   {
     name: "Vansh Shrivastava",
@@ -129,6 +129,153 @@ const Managers = [
     image: "./Riddhi.jpg",
     linkedinUrl: "https://www.linkedin.com/in/riddhi-r-15a4b2248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     email: "mailto:riddhi_2401me75@iitp.ac.in"
+  },
+  {
+    name: "Mohit Joshi",
+    title: "Events & Startup Relations",
+    image: "./Mohit.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/mohit-joshi-iitp/",
+    email: "mailto:mohit_2401es08@iitp.ac.in"
+  },
+  {
+    name: "Mayur Rathi",
+    title: "Events & Startup Relations",
+    image: "./Mayur.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/mayur-prakash-rathi-a70a75310/",
+    email: "mailto:mayur_2401ct01@iitp.ac.in"
+  },
+  {
+    name: "Sahil",
+    title: "Events & Startup Relations",
+    image: "./Sahil.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/sahil-72019a360/",
+    email: "mailto:sahil_2401ee16@iitp.ac.in"
+  },
+  {
+    name: "Aditya Kailash Kuranjekar",
+    title: "Events & Startup Relations",
+    image: "./Aditya.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/aditya-kuranjekar-ba572130b/",
+    email: "mailto:aditya_2403cs01@iitp.ac.in"
+  },
+  {
+    name: "Parth Bhagwat",
+    title: "Events & Startup Relations",
+    image: "./Parth2.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/parth-bhagwat-928b3b354/",
+    email: "mailto:bhagwat_2401ce31@iitp.ac.in"
+  },
+  {
+    name: "Pratichi Maheshwari",
+    title: "Events & Startup Relations",
+    image: "./Pratichi.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/pratichi-maheshwari/",
+    email: "mailto:pratichi_2401me07@iitp.ac.in"
+  },
+  {
+    name: "Srijan Sharma",
+    title: "Events & Startup Relations",
+    image: "./Srijan.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/srijan-sharma-818232321/",
+    email: "mailto:srijan_2401cb44@iitp.ac.in"
+  },
+  {
+    name: "Uday Teja",
+    title: "Sponsorship & Marketing",
+    image: "./Uday.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/uday-teja-8a02b9329/",
+    email: "mailto:kandregula_2403ct03@iitp.ac.in"
+  },
+  {
+    name: "Tushar Kumar Singh",
+    title: "Sponsorship & Marketing",
+    image: "./Tushar2.jpg",
+    // linkedinUrl: "",
+    email: "mailto:tushar_2401es17@iitp.ac.in"
+  },
+  {
+    name: "Abhishek Kumar",
+    title: "Sponsorship & Marketing",
+    image: "./Abhishek.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/abhishek-kumar-0b0720285/",
+    email: "mailto:abhishek_2401cb06@iitp.ac.in"
+  },
+  {
+    name: "Paarth Mandelia",
+    title: "Sponsorship & Marketing",
+    image: "./Paarth.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/paarth-mandelia-178236319/",
+    email: "mailto:paarth_2401me01@iitp.ac.in"
+  },
+  {
+    name: "Saksham Thakur",
+    title: "Sponsorship & Marketing",
+    image: "./Saksham.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/saksham-thakur-192826321/",
+    email: "mailto:saksham_2401cb56@iitp.ac.in"
+  },
+  {
+    name: "Ayush Yadav",
+    title: "Sponsorship & Marketing",
+    image: "./Ayush.png",
+    linkedinUrl: "https://www.linkedin.com/in/ayushiitp/",
+    email: "mailto:ayush_2401ai43@iitp.ac.in"
+  },
+  {
+    name: "Shreya Yadav",
+    title: "Sponsorship & Marketing",
+    image: "./Shreya.jpg",
+    // linkedinUrl: "",
+    email: "mailto:shreya_2401ce14@iitp.ac.in"
+  },
+  {
+    name: "Abhrajit Chowdhury",
+    title: "Sponsorship & Marketing",
+    image: "./Abhrajit.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/abhrajit-chowdhury-866bb0312/",
+    email: "mailto:abhrajit_2401ai44@iitp.ac.in"
+  },
+  {
+    name: "Krishna Teja",
+    title: "Production and Design",
+    image: "./Krishna.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/krishna-teja-0b293b346/",
+    email: "mailto:krishna_2401ec29@iitp.ac.in"
+  },
+  {
+    name: "Hasini NC",
+    title: "Production and Design",
+    image: "./Hasini.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/hasini-nallan-chakravarthula-872286335/",
+    email: "mailto:nallan_2401ai22@iitp.ac.in"
+  },
+  {
+    name: "Poojith Kolluri",
+    title: "Media & Public Relations",
+    image: "./Poojith.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/poojith-kolluri-iiteco/",
+    email: "mailto:kolluri_2401es03@iitp.ac.in"
+  },
+  {
+    name: "Devanarayanan J",
+    title: "Media & Public Relations",
+    image: "./Devanarayanan.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/devanarayanan-j-691014324/",
+    email: "mailto:devanarayanan_2403mm02@iitp.ac.in"
+  },
+  {
+    name: "Bhavika Mulchandani",
+    title: "Media & Public Relations",
+    image: "./Bhavika.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/bhavika-mulchandani-b99564321/",
+    email: "mailto:bhavika_2403me12@iitp.ac.in"
+  },
+  {
+    name: "Prince Kumar",
+    title: "Media & Public Relations",
+    image: "./Prince.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/prince-kumar-iitp/",
+    email: "mailto:prince_2401ai38@iitp.ac.in"
   },
 ];
 
