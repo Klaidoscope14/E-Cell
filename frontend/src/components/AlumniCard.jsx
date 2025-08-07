@@ -12,7 +12,14 @@ export default function AlumniCard({ name, title, image, linkedinUrl, email}) {
           </div>
         </div>
         <h3 className="text-2xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-amber-500">{name}</h3>
-        <p className="text-md text-amber-100 opacity-90 mb-4">{title}</p>
+        <p className="text-md text-amber-100 opacity-90 mb-4 text-ellipsis line-clamp-2">
+          {title.split('\n').map((line, index) => (
+            <span key={index}>
+              {line}
+              <br />
+            </span>
+          ))}
+        </p>
         
         {/* Social Media Icons with higher contrast */}
         <div className="flex justify-center space-x-6 mt-4">
