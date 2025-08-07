@@ -385,7 +385,7 @@ const Endeavors = () => {
   };
 
   return (
-    <div className="min-h-screen text-white relative bg-gradient-to-br from-slate-950 via-slate-800 to-slate-950">
+    <div className="min-h-screen text-white relative bg-gradient-to-br from-slate-950 via-slate-800 to-slate-950 overflow-x-hidden">
       {/* Scene Canvas Background */}
       <div className="fixed inset-0 z-20">
         <SceneCanvas />

@@ -27,7 +27,7 @@ export default function Hero() {
             className="text-6xl md:text-7xl font-bold mb-4 tracking-tight"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-purple-400 to-blue-400">
-              E-Cell Alumni Emissary
+              E-Cell IIT Patna
             </span>
           </motion.h1>
           
@@ -38,7 +38,7 @@ export default function Hero() {
             className="text-6xl md:text-7xl font-bold mb-6 tracking-tight"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-purple-400 to-blue-400">
-              Reconnect. Inspire. Grow.
+              Innovate. Impact. Inspire.
             </span>
           </motion.h1>
           
