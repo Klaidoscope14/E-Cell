@@ -1,45 +1,46 @@
 import { Marquee } from "./magicui/marquee";
 import SceneCanvas from "../three/SceneCanvas";
+
 export default function Speakers() {
   const row1Speakers = [
     {
-      name: "Jack",
-      username: "@jack",
-      body: "I've never seen anything like this before. It's amazing. I love it.",
-      img: "https://avatar.vercel.sh/jack",
+      name: "Anubhav Dubey",
+      profession: "Founder of Chai Sutta Bar",
+      body: "If you are confident about the execution. Don’t stress much on idea, Start implementing Now.",
+      img: "/AnubhavDubey.jpeg",
     },
     {
-      name: "Jill",
-      username: "@jill",
-      body: "I don't know what to say. I'm speechless. This is amazing.",
-      img: "https://avatar.vercel.sh/jill",
+      name: "Sandeep Jain",
+      profession: "Founder of GeeksforGeeks",
+      body: "EdTech startups are playing an increasing role in Indian education system with the growth of the Digital India story.",
+      img: "/SandeepJain.jpeg",
     },
     {
-      name: "John",
-      username: "@john",
-      body: "I'm at a loss for words. This is amazing. I love it.",
-      img: "https://avatar.vercel.sh/john",
+      name: "Amit Lodha",
+      profession: "Additional Director General of Police (ADGP), IPS Officer",
+      body: "In the journey of life, the only way to achieve success is to keep moving forward with determination and resilience.",
+      img: "/amit.jpg",
     },
   ];
 
   const row2Speakers = [
     {
-      name: "Alice",
-      username: "@alice",
-      body: "The experience has been transformative. So grateful for this platform.",
-      img: "https://avatar.vercel.sh/alice",
+      name: "Dr. Tanu Jain",
+      profession: "Former Bureaucrat, Founder of Tathastu ICS",
+      body: "You are not behind in life. You are on your timeline. The only race that matters is the one with yourself.",
+      img: "/tanujain.jpeg",
     },
     {
-      name: "Bob",
-      username: "@bob",
-      body: "Truly next level. I didn’t expect to be this impressed.",
-      img: "https://avatar.vercel.sh/bob",
+      name: "Dr. Praveen Sinha",
+      profession: "CEO, Tata Power",
+      body: "We are dedicated to becoming a customercentric utility by delivering innovative solutions, enhancing customer experiences and building a more sustainable energy future.",
+      img: "/praveensinha.jpg",
     },
     {
-      name: "Eva",
-      username: "@eva",
-      body: "Stunning. Beautifully designed and incredibly smooth.",
-      img: "https://avatar.vercel.sh/eva",
+      name: "Suresh Narasimha",
+      profession: "Deep Tech Idea Stage Investor",
+      body: "Failures are part of entrepreneurship. Good entrepreneurs take failure as part of the process and move on rather than engaging in self-pity.",
+      img: "/Suresh.jpg",
     },
   ];
 
@@ -51,7 +52,7 @@ export default function Speakers() {
         className="w-24 h-24 mx-auto rounded-full object-cover mb-4 border-2 border-orange-300"
       />
       <h4 className="text-xl font-semibold text-orange-300">{spk.name}</h4>
-      <p className="text-sm text-gray-400 mb-1">{spk.username}</p>
+      <p className="text-sm text-gray-400 mb-1">{spk.profession}</p>
       <p className="text-sm text-gray-300">{spk.body}</p>
     </div>
   );
@@ -61,10 +62,6 @@ export default function Speakers() {
 
       {/* Background elements for depth */}
       <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-      
-      <div className="absolute inset-0 z-1">
-        <SceneCanvas />
-      </div>
       
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 relative z-10 bg-gradient-to-r from-yellow-200 via-orange-300 to-red-300 bg-clip-text text-transparent">
         Meet Our Speakers
