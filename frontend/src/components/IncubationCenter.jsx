@@ -156,10 +156,10 @@ export default function IncubationCenter() {
         className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-10"
       >
         {[
-          { number: 100, label: "Startups Incubated" },
+          { number: 20, label: "Startups Incubated" },
           { number: 85, suffix: "%", label: "Success Rate" },
-          { number: 50, prefix: "$", suffix: "M+", label: "Total Funding Raised" },
-          { number: 500, suffix: "+", label: "Jobs Created" },
+          { number: 1, prefix: "$", suffix: "Cr+", label: "Total Funding Raised" },
+          { number: 50, suffix: "+", label: "Jobs Created" },
         ].map((stat, index) => (
           <div key={index} className="text-center">
             <div className="text-3xl font-bold text-white">
