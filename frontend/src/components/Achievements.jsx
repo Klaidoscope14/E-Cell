@@ -34,21 +34,21 @@ export default function Achievements() {
 
   const items = [
     {
-      title: "100+ Startups",
+      title: "10+ Startups",
       desc: "Founded by our alumni",
       icon: Rocket,
       color: "from-orange-400 to-blue-500",
       bgColor: "from-orange-200/20 to-red-500/20",
-      count: 100,
+      count: 10,
       suffix: "+"
     },
     {
-      title: "₹50Cr+ Funding",
+      title: "₹1Cr+ Funding",
       desc: "Raised collectively",
       icon: TrendingUp,
       color: "from-orange-400 to-blue-500",
       bgColor: "from-green-200/20 to-emerald-500/20",
-      count: 50,
+      count: 1,
       suffix: "Cr+"
     },
     {

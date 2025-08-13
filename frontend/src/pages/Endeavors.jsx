@@ -12,7 +12,7 @@ const endeavorsData = [
     accentColor: "emerald",
     date: "Annual",
     participants: "500+",
-    success: "25 Partnerships",
+    success: "15 Partnerships",
     category: "Flagship Event",
     image: "bg-gradient-to-br from-emerald-500/20 to-teal-500/20",
     highlights: ["Global Speakers", "Startup Competitions", "Investment Opportunities", "Networking Sessions"],
@@ -309,9 +309,9 @@ const StatsSection = () => {
 
   const stats = [
     { number: "1000+", label: "Students Engaged", icon: "👥", color: "text-blue-400" },
-    { number: "50+", label: "Events Hosted", icon: "🎯", color: "text-emerald-400" },
-    { number: "25+", label: "Startups Launched", icon: "🚀", color: "text-purple-400" },
-    { number: "100+", label: "Mentors Connected", icon: "🤝", color: "text-orange-400" }
+    { number: "25+", label: "Events Hosted", icon: "🎯", color: "text-emerald-400" },
+    { number: "10+", label: "Startups Launched", icon: "🚀", color: "text-purple-400" },
+    { number: "50+", label: "Mentors Connected", icon: "🤝", color: "text-orange-400" }
   ];
 
   return (
