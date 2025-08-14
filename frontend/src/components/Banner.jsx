@@ -11,9 +11,7 @@ export default function Banner() {
     <section className="relative w-full overflow-hidden">
       <style>
         {`
-          @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
           .countdown-banner {
-            font-family: 'Orbitron', sans-serif;
             animation: glowPulse 2s infinite ease-in-out;
           }
           @keyframes glowPulse {
