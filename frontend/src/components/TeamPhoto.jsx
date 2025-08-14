@@ -32,7 +32,7 @@ export default function TeamPhoto() {
   return (
     <section
       id="team"
-      className="relative bg-[#0f172a] min-h-screen w-full flex flex-col justify-center items-center px-6 md:px-20 py-12 text-white overflow-hidden"
+      className="relative bg-[#0f172a] min-h-screen w-full flex flex-col justify-center items-center md:px-6 py-12 text-white overflow-hidden"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -56,11 +56,11 @@ export default function TeamPhoto() {
       </div>
 
       {/* Main Content Container */}
-      <div className="flex w-full max-w-7xl items-center justify-between">
+      <div className="flex flex-col md:flex-row w-full  items-center justify-center px-4">
         
         {/* Enhanced Image Container - Left Side */}
         <div 
-          className={`z-10 w-1/2 rounded-3xl overflow-hidden border-4 border-orange-400/30 shadow-2xl shadow-purple-500/20 transform transition-all duration-1000 ease-out hover:shadow-orange-400/30 hover:border-orange-400/50 ${
+          className={`px-0  lg:px-0 z-10 w-full  lg:w-[40vw] rounded-3xl overflow-hidden  shadow-2xl shadow-slate-400/20 transform transition-all duration-1000 ease-out hover:shadow-orange-400/30 hover:border-orange-400/50 ${
             isVisible ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-20 opacity-0 scale-95'
           }`}
           style={{
@@ -85,7 +85,7 @@ export default function TeamPhoto() {
               <img
                 src="/teamphoto.jpg"
                 alt="Team"
-                className={`w-full h-[60vh] object-cover object-center rounded-2xl transition-all duration-500 group-hover:brightness-110 ${
+                className={`w-full lg:max-w-[40vw] h-fit object-cover object-center rounded-2xl transition-all duration-500 group-hover:brightness-110 ${
                   imageLoaded ? 'opacity-100' : 'opacity-0'
                 }`}
                 onLoad={() => setImageLoaded(true)}
@@ -104,10 +104,10 @@ export default function TeamPhoto() {
         </div>
 
         {/* Big Animated Cursive Text - Right Side */}
-        <div className="w-1/2 flex items-center justify-center pl-16">
+        <div className="w-full lg:w-[40vw] flex items-center justify-center">
           <div className={`transform transition-all duration-1000 ease-out ${textVisible ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}>
             <h1
-  className="text-6xl lg:text-7xl xl:text-8xl font-light text-white leading-tight whitespace-pre-wrap"
+  className="text-6xl lg:text-7xl lg:max-w-[40vw] xl:text-8xl font-light text-white leading-tight whitespace-pre-wrap flex flex-col justify-center"
   style={{
     fontFamily: '"Dancing Script", "Great Vibes", "Brush Script MT", cursive',
     fontWeight: '400',
@@ -115,11 +115,11 @@ export default function TeamPhoto() {
   }}
 >
   {['"dream team', 'behind the', 'vision"'].map((line, lineIndex) => (
-    <span key={lineIndex} className="block">
+    <span key={lineIndex} className="">
       {line.split('').map((char, i) => (
         <span
           key={i}
-          className={`inline-block animate-fade-in`}
+          className={` animate-fade-in`}
           style={{
             animationDelay: `${(lineIndex * 1.5) + i * 0.08}s`,
             animationFillMode: 'forwards',
@@ -129,6 +129,7 @@ export default function TeamPhoto() {
           {char}
         </span>
       ))}
+      &nbsp;
     </span>
   ))}
 </h1>
