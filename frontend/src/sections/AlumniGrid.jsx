@@ -37,6 +37,13 @@ const Heads = [
     email: "mailto:chaitanya_2301cs77@iitp.ac.in"
   },
   {
+    name: "Sasmit Shashwat",
+    title: "Web Development & Tech",
+    image: "./Sasmit.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/sasmit-shashwat-b72622282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "mailto:sasmit_2301ai20@iitp.ac.in"
+  },
+  {
     name: "Aditya Mittal",
     title: "Events & Startup Relations",
     image: "./Mittal.jpeg",
@@ -105,6 +112,20 @@ const Heads = [
     image: "./Sameeksha.jpg",
     linkedinUrl: "https://www.linkedin.com/in/sameeksha-madhav-nagulwad-262776365",
     email: "mailto:sameeksha_2301ec23@iitp.ac.in"
+  },
+  {
+    name: "Atharva Pawar",
+    title: "Media & Public Relations",
+    image: "./Atharva.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/atharva-pawar-a58b272b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "mailto:atharva_2301ct06@iitp.ac.in"
+  },
+  {
+    name: "Riya Singh",
+    title: "Media & Public Relations",
+    image: "./Riya.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/riyasingh25",
+    email: "mailto:riya_2301ph25@iitp.ac.in"
   },
 ];
 
