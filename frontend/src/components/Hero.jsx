@@ -11,7 +11,6 @@ function CountdownTimer() {
   return (
     <div
       className="mt-8 bg-black/50 px-6 py-4 rounded-xl inline-block text-center"
-      style={{ fontFamily: "'Orbitron', sans-serif" }}
     >
       <p className="text-lg font-semibold text-blue-200 mb-2">
         ⏳ Countdown to Xplore 2025
@@ -39,16 +38,9 @@ function CountdownTimer() {
 }
 
 export default function Hero() {
-  React.useEffect(() => {
-    const link = document.createElement("link");
-    link.href =
-      "https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
-  }, []);
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white">
+    <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white">
       {/* Background elements for depth */}
       <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
       <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-700 opacity-5 rounded-full blur-3xl"></div>
@@ -60,7 +52,7 @@ export default function Hero() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 container mx-auto px-6 py-32 pt-5 flex flex-col items-center justify-start min-h-screen">
+      <div className="relative z-10 container mx-auto px-6 py-12 pt-5 flex flex-col items-center justify-start">
         <div className="text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -123,35 +115,6 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
-     {/* ✨ Sleek Shining Down Arrow */}
-<motion.div
-  initial={{ opacity: 0, y: 10 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1, delay: 1.2 }}
-  className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-10 cursor-pointer"
->
-  <a href="#mission-vision" className="group">
-    <motion.svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-7 h-7 text-white group-hover:text-blue-400 transition-colors duration-300"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-      animate={{
-        opacity: [0.7, 1, 0.7],
-        scale: [1, 1.2, 1],
-      }}
-      transition={{
-        duration: 2,
-        repeat: Infinity,
-        ease: "easeInOut",
-      }}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-    </motion.svg>
-  </a>
-</motion.div>
     </section>
   );
 }
