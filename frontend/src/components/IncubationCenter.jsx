@@ -153,7 +153,7 @@ export default function IncubationCenter() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
         viewport={{ once: true }}
-        className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-10"
+        className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-10 hidden"
       >
         {[
           { number: 20, label: "Startups Incubated" },
