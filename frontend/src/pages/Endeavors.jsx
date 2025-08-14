@@ -16,7 +16,7 @@ const endeavorsData = [
     category: "Flagship Event",
     image: "bg-gradient-to-br from-emerald-500/20 to-teal-500/20",
     highlights: ["Global Speakers", "Startup Competitions", "Investment Opportunities", "Networking Sessions"],
-    nextEvent: "January 2026"
+    // nextEvent: "January 2026"
   },
   {
     id: "startin",
@@ -31,7 +31,7 @@ const endeavorsData = [
     category: "Campus Expo",
     image: "bg-gradient-to-br from-purple-500/20 to-violet-500/20",
     highlights: ["Live Demos", "Pitch Competitions", "Mentor Feedback", "Market Validation"],
-    nextEvent: "March 2026"
+    // nextEvent: "March 2026"
   },
   {
     id: "xplore",
@@ -46,7 +46,7 @@ const endeavorsData = [
     category: "Initiation",
     image: "bg-gradient-to-br from-orange-500/20 to-amber-500/20",
     highlights: ["Freshers Program", "Innovation Workshops", "Mentorship Matching", "Skill Development"],
-    nextEvent: "August 2025"
+    // nextEvent: "August 2025"
   }
 ];
 
@@ -178,10 +178,10 @@ const FeaturedEndeavor = ({ endeavor, index }) => {
             </motion.div>
 
             {/* Next Event */}
-            <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 text-sm text-gray-400">
+            {/* <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 text-sm text-gray-400">
               <span>Next Event:</span>
               <span className="font-semibold text-white">{endeavor.nextEvent}</span>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Visual Content */}
@@ -385,7 +385,7 @@ const Endeavors = () => {
   };
 
   return (
-    <div className="min-h-screen text-white relative bg-gradient-to-br from-slate-950 via-slate-800 to-slate-950 overflow-x-hidden">
+    <div className="min-h-screen text-white relative bg-gradient-to-br from-slate-950 via-slate-800 to-slate-950  overflow-hidden">
       {/* Scene Canvas Background */}
       <div className="fixed inset-0 z-20">
         <SceneCanvas />
