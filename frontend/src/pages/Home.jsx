@@ -8,6 +8,7 @@ import { Speaker } from "lucide-react";
 import Speakers from "../components/Speakers";
 import TeamPhoto from "../components/TeamPhoto";
 import IncubationCenter from "../components/IncubationCenter";
+import Banner from "../components/Banner";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       </div>
 
       <div className="relative z-[5]">
+        <Banner />
         <Hero />
         <MissionVision />
         <IncubationCenter />

@@ -158,7 +158,7 @@ export default function IncubationCenter() {
         {[
           { number: 20, label: "Startups Incubated" },
           { number: 85, suffix: "%", label: "Success Rate" },
-          { number: 1, prefix: "$", suffix: "Cr+", label: "Total Funding Raised" },
+          { number: 50, prefix: "₹", suffix: "L+", label: "Total Funding Raised" },
           { number: 50, suffix: "+", label: "Jobs Created" },
         ].map((stat, index) => (
           <div key={index} className="text-center">
