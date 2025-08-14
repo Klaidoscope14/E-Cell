@@ -85,7 +85,7 @@ export default function TeamPhoto() {
               <img
                 src="/teamphoto.jpg"
                 alt="Team"
-                className={`w-full lg:max-w-[40vw] h-fit object-cover object-center rounded-2xl transition-all duration-500 group-hover:brightness-110 ${
+                className={`w-full lg:max-w-[40vw] lg:max-h-[30vw]  object-cover object-center rounded-2xl transition-all duration-500 group-hover:brightness-110 ${
                   imageLoaded ? 'opacity-100' : 'opacity-0'
                 }`}
                 onLoad={() => setImageLoaded(true)}
