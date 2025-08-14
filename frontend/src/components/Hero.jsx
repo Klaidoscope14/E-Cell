@@ -40,7 +40,7 @@ function CountdownTimer() {
 export default function Hero() {
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white">
+    <section className="h-[100vh] relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white">
       {/* Background elements for depth */}
       <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
       <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-700 opacity-5 rounded-full blur-3xl"></div>
@@ -52,7 +52,7 @@ export default function Hero() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 container mx-auto px-6 py-12 pt-5 flex flex-col items-center justify-start">
+      <div className="relative z-10 container mx-auto px-6 py-12 pt-16 flex flex-col items-center justify-start">
         <div className="text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -80,7 +80,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed text-blue-100 font-light"
+            className="text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed text-blue-100 font-light pt-3 pb-0"
           >
             Join our vibrant alumni community and relive your E-Cell journey
             with fellow innovators and leaders.
@@ -91,7 +91,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className="mt-8 flex flex-col sm:flex-row gap-4 justify-center"
+            className="mt-8 flex flex-col sm:flex-row gap-4 justify-center pb-4"
           >
             <Link to="/alumni">
               <button className="bg-gradient-to-r from-orange-500 to-blue-500 hover:from-orange-600 hover:to-blue-600 text-white font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-lg transform hover:scale-105">
