@@ -20,7 +20,8 @@ export default function Alumni() {
       year: "Class of 2016",
       title: "Co-founder & CEO at\nPulse",
       image: haren,
-      linkedinUrl: "https://www.linkedin.com/in/harenchelle/"
+      linkedinUrl: "https://www.linkedin.com/in/harenchelle/",
+      email: "mailto:haren@pulsegen.io"
     },
     {
       id: 2,
@@ -28,7 +29,8 @@ export default function Alumni() {
       year: "Class of 2019",
       title: "Co-founder & CTO at\nRevspot",
       image: chirag,
-      linkedinUrl: "https://www.linkedin.com/in/chiragw15/"
+      linkedinUrl: "https://www.linkedin.com/in/chiragw15/",
+      email: "mailto:chirag@revspot.ai"
     },
     {
       id: 3,
@@ -36,7 +38,8 @@ export default function Alumni() {
       year: "Class of 2017",
       title: "Co-Founder & CFO at\nRaspa Pharma",
       image: ram,
-      linkedinUrl: "https://www.linkedin.com/in/ram001/"
+      linkedinUrl: "https://www.linkedin.com/in/ram001/",
+      // email: ""
     },
     {
       id: 4,
@@ -44,7 +47,8 @@ export default function Alumni() {
       year: "Class of 2017",
       title: "Co-founder at\nRadical Health",
       image: prashant,
-      linkedinUrl: "https://www.linkedin.com/in/baghelprashant/"
+      linkedinUrl: "https://www.linkedin.com/in/baghelprashant/",
+      email: "mailto:prashantbaghel123@gmail.com"
     },  
 
   ];
@@ -114,7 +118,7 @@ export default function Alumni() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="flex 
         flex-wrap justify-center gap-6 mt-8">
           {featuredAlumni.map((alumni) => (
-            <AlumniCard key={alumni.id} name={alumni.name} year={alumni.year} title={alumni.title} image={alumni.image} linkedinUrl={alumni.linkedinUrl} />
+            <AlumniCard key={alumni.id} name={alumni.name} year={alumni.year} title={alumni.title} image={alumni.image} linkedinUrl={alumni.linkedinUrl} email={alumni.email} />
           ))}
         </motion.div>
 

@@ -43,13 +43,13 @@ export default function Achievements() {
       suffix: "+"
     },
     {
-      title: "₹1Cr+ Funding",
+      title: "₹50C=L+ Funding",
       desc: "Raised collectively",
       icon: TrendingUp,
       color: "from-orange-400 to-blue-500",
       bgColor: "from-green-200/20 to-emerald-500/20",
-      count: 1,
-      suffix: "Cr+"
+      count: 50,
+      suffix: "L+"
     },
     {
       title: "Global Recognition",

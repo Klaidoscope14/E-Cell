@@ -138,6 +138,13 @@ const Managers = [
     email: "mailto:mohit_2401es08@iitp.ac.in"
   },
   {
+    name: "Aditya Kailash Kuranjekar",
+    title: "Events & Startup Relations",
+    image: "./Aditya.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/aditya-kuranjekar-ba572130b/",
+    email: "mailto:aditya_2403cs01@iitp.ac.in"
+  },
+  {
     name: "Mayur Rathi",
     title: "Events & Startup Relations",
     image: "./Mayur.jpg",
@@ -150,13 +157,6 @@ const Managers = [
     image: "./Sahil.jpg",
     linkedinUrl: "https://www.linkedin.com/in/sahil-72019a360/",
     email: "mailto:sahil_2401ee16@iitp.ac.in"
-  },
-  {
-    name: "Aditya Kailash Kuranjekar",
-    title: "Events & Startup Relations",
-    image: "./Aditya.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/aditya-kuranjekar-ba572130b/",
-    email: "mailto:aditya_2403cs01@iitp.ac.in"
   },
   {
     name: "Parth Bhagwat",

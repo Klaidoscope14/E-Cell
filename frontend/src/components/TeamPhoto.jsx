@@ -83,7 +83,7 @@ export default function TeamPhoto() {
               lensColor="#000000"
             >
               <img
-                src="/teamphoto.JPG"
+                src="/teamphoto.jpg"
                 alt="Team"
                 className={`w-full h-[60vh] object-cover object-center rounded-2xl transition-all duration-500 group-hover:brightness-110 ${
                   imageLoaded ? 'opacity-100' : 'opacity-0'
