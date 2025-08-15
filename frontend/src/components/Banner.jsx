@@ -2,10 +2,11 @@ import { motion } from "framer-motion";
 import SceneCanvas from "../three/SceneCanvas";
 
 export default function Banner() {
-  const eventDate = new Date("2025-08-16T00:00:00+05:30");
+  const eventDate = new Date("2025-08-16T13:30:00+05:30");
   const today = new Date();
   const diffTime = eventDate - today;
-  const daysLeft = Math.max(0, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+  // const daysLeft = Math.max(0, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+  const hoursLeft = Math.max(0, Math.ceil(diffTime / (1000 * 60 * 60)));
 
   return (
     <section className="relative w-full overflow-hidden">
@@ -42,7 +43,8 @@ export default function Banner() {
         transition={{ duration: 0.8, delay: 0.1 }}
         className="countdown-banner text-white text-center py-4 font-semibold shadow-lg mt-16 relative z-10 bg-gradient-to-r from-orange-400 via-purple-400 to-blue-400"
       >
-        🚀 Mark Your Calendar! Xplore 2025 Is Just {daysLeft} {daysLeft === 1 ? "Day" : "Days"} Away - 16th August · 1:30 PM 🎯
+        {/* 🚀 Mark Your Calendar! Xplore 2025 Is Just {daysLeft} {daysLeft === 1 ? "Day" : "Days"} Away - 16th August · 1:30 PM 🎯 */}
+        🚀 Mark Your Calendar! Xplore 2025 Is Just {hoursLeft} {hoursLeft === 1 ? "Hour" : "Hours"} Away - 16th August · 1:30 PM 🎯
       </motion.div>
     </section>
   );

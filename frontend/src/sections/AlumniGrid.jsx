@@ -288,7 +288,7 @@ const Managers = [
     name: "Anshika Singh",
     title: "Production and Design",
     image: "./Anshika.jpg",
-    // linkedinUrl: "https://www.linkedin.com/in/sandeep-sisodiya-2401cb02",
+    // linkedinUrl: "",
     email: "mailto:anshika_2401me16@iitp.ac.in"
   },
   {
