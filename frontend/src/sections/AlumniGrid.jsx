@@ -285,6 +285,13 @@ const Managers = [
     email: "mailto:sandeep_2401cb02@iitp.ac.in"
   },
   {
+    name: "Anshika Singh",
+    title: "Production and Design",
+    image: "./Anshika.jpg",
+    // linkedinUrl: "https://www.linkedin.com/in/sandeep-sisodiya-2401cb02",
+    email: "mailto:anshika_2401me16@iitp.ac.in"
+  },
+  {
     name: "Poojith Kolluri",
     title: "Media & Public Relations",
     image: "./Poojith.jpg",
