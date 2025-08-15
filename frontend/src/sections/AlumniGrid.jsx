@@ -201,6 +201,13 @@ const Managers = [
     email: "mailto:srijan_2401cb44@iitp.ac.in"
   },
   {
+    name: "Sarthak Sharma",
+    title: "Events & Startup Relations",
+    image: "./Sarthak.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/sarthak-sharma-91487631a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "mailto:sarthak_2401cb21@iitp.ac.in"
+  },
+  {
     name: "Uday Teja",
     title: "Sponsorship & Marketing",
     image: "./Uday.jpg",
@@ -269,6 +276,13 @@ const Managers = [
     image: "./Hasini.jpeg",
     linkedinUrl: "https://www.linkedin.com/in/hasini-nallan-chakravarthula-872286335/",
     email: "mailto:nallan_2401ai22@iitp.ac.in"
+  },
+  {
+    name: "Sandeep Sisodiya",
+    title: "Production and Design",
+    image: "./Sandeep.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/sandeep-sisodiya-2401cb02",
+    email: "mailto:sandeep_2401cb02@iitp.ac.in"
   },
   {
     name: "Poojith Kolluri",
