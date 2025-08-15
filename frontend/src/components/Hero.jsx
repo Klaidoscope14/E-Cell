@@ -40,14 +40,14 @@ function CountdownTimer() {
 export default function Hero() {
 
   return (
-    <section className="h-[100vh] relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white">
+    <section className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white">
       {/* Background elements for depth */}
       <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
       <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-700 opacity-5 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600 opacity-5 rounded-full blur-3xl"></div>
 
       {/* Three.js canvas - moved higher in z-index but behind content */}
-      <div className="absolute inset-0 z-1">
+      <div className="absolute inset-0 z-10">
         <SceneCanvas />
       </div>
 
@@ -107,6 +107,7 @@ export default function Hero() {
 
           {/* Countdown */}
           <motion.div
+          className="relative z-20"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
