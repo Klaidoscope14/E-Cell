@@ -319,6 +319,13 @@ const Managers = [
     linkedinUrl: "https://www.linkedin.com/in/prince-kumar-iitp/",
     email: "mailto:prince_2401ai38@iitp.ac.in"
   },
+  {
+    name: "Ayush Sen",
+    title: "Media & Public Relations",
+    image: "./Ayush.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/ayush-sen-b96870326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+    email: "mailto:ayush_2401ct04@iitp.ac.in"
+  },
 ];
 
 const CardSection = ({ title, people, useGrid = false, hoveredId, setHoveredId }) => (
@@ -341,12 +348,13 @@ const CardSection = ({ title, people, useGrid = false, hoveredId, setHoveredId }
     >
       {people.map((person, index) => {
         const id = `${person.name}-${person.title}`;
+        const supportsHover = window.matchMedia("(hover: hover)").matches;
         return (
           <div
             key={id}
             className="group w-full transition-all duration-300 transform"
-            onMouseEnter={() => setHoveredId(id)}
-            onMouseLeave={() => setHoveredId(null)}
+            onMouseEnter={() => supportsHover && setHoveredId(id)}
+            onMouseLeave={() => supportsHover && setHoveredId(null)}
           >
             <div
               className={`transition-all duration-300 transform ${
