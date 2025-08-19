@@ -41,7 +41,7 @@ const endeavorsData = [
     color: "from-orange-500 to-amber-500",
     accentColor: "orange",
     date: "Annual",
-    participants: "100+",
+    participants: "300+",
     success: "15 Mentorships",
     category: "Initiation",
     image: "bg-gradient-to-br from-orange-500/20 to-amber-500/20",
@@ -152,7 +152,7 @@ const FeaturedEndeavor = ({ endeavor, index }) => {
             {/* Stats */}
             <motion.div variants={staggerContainer} className="flex flex-wrap gap-8">
               {[
-                { label: "Participants", value: endeavor.participants },
+                { label: "Students", value: endeavor.participants },
                 { label: "Frequency", value: endeavor.date },
                 { label: "Success", value: endeavor.success }
               ].map((stat, idx) => (
@@ -283,19 +283,19 @@ const EndeavorCard = ({ endeavor, index }) => {
           <div className="flex justify-between items-center text-sm">
             <div className="flex gap-4">
               <div className={`text-${endeavor.accentColor}-400 font-semibold`}>
-                {endeavor.participants}
+                {endeavor.participants + " Students"}
               </div>
               <div className="text-amber-400 font-semibold">
                 {endeavor.success}
               </div>
             </div>
             
-            <motion.div
+           {/* <motion.div
               className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors"
               whileHover={{ scale: 1.1, rotate: 45 }}
             >
               <span className="text-white text-lg">→</span>
-            </motion.div>
+             </motion.div> */}
           </div>
         </div>
       </div>
