@@ -201,6 +201,13 @@ const Managers = [
     email: "mailto:srijan_2401cb44@iitp.ac.in"
   },
   {
+    name: "Sarthak Sharma",
+    title: "Events & Startup Relations",
+    image: "./Sarthak.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/sarthak-sharma-91487631a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "mailto:sarthak_2401cb21@iitp.ac.in"
+  },
+  {
     name: "Uday Teja",
     title: "Sponsorship & Marketing",
     image: "./Uday.jpg",
@@ -271,6 +278,20 @@ const Managers = [
     email: "mailto:nallan_2401ai22@iitp.ac.in"
   },
   {
+    name: "Sandeep Sisodiya",
+    title: "Production and Design",
+    image: "./Sandeep.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/sandeep-sisodiya-2401cb02",
+    email: "mailto:sandeep_2401cb02@iitp.ac.in"
+  },
+  {
+    name: "Anshika Singh",
+    title: "Production and Design",
+    image: "./Anshika.jpg",
+    // linkedinUrl: "",
+    email: "mailto:anshika_2401me16@iitp.ac.in"
+  },
+  {
     name: "Poojith Kolluri",
     title: "Media & Public Relations",
     image: "./Poojith.jpg",
@@ -298,6 +319,13 @@ const Managers = [
     linkedinUrl: "https://www.linkedin.com/in/prince-kumar-iitp/",
     email: "mailto:prince_2401ai38@iitp.ac.in"
   },
+  {
+    name: "Ayush Sen",
+    title: "Media & Public Relations",
+    image: "./Ayush.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/ayush-sen-b96870326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+    email: "mailto:ayush_2401ct04@iitp.ac.in"
+  },
 ];
 
 const CardSection = ({ title, people, useGrid = false, hoveredId, setHoveredId }) => (
@@ -320,12 +348,13 @@ const CardSection = ({ title, people, useGrid = false, hoveredId, setHoveredId }
     >
       {people.map((person, index) => {
         const id = `${person.name}-${person.title}`;
+        const supportsHover = window.matchMedia("(hover: hover)").matches;
         return (
           <div
             key={id}
             className="group w-full transition-all duration-300 transform"
-            onMouseEnter={() => setHoveredId(id)}
-            onMouseLeave={() => setHoveredId(null)}
+            onMouseEnter={() => supportsHover && setHoveredId(id)}
+            onMouseLeave={() => supportsHover && setHoveredId(null)}
           >
             <div
               className={`transition-all duration-300 transform ${
