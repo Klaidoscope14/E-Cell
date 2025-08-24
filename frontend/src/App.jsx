@@ -8,7 +8,7 @@ import Endeavors from "./pages/Endeavors";
 import Footer from "./sections/Footer";
 import AlumniRegistration from "./pages/AlumniRegistration";
 import Team from "./pages/Team";
-import Gallery from "./pages/Gallery";
+import { Gallery } from "./pages/Gallery";
 
 function AppContent() {
   const location = useLocation();
