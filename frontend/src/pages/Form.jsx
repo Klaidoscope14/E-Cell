@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SceneCanvas from "../three/SceneCanvas";
 import { useNavigate } from "react-router-dom";
+import { Phone } from 'lucide-react';
 
 export default function StartupExpoForm() {
   const [formData, setFormData] = useState({
@@ -100,12 +101,9 @@ export default function StartupExpoForm() {
       </div>
     </div>
   );
-}
-
-
+} 
 
   return (
-
     <div className="min-h-screen text-white relative bg-gradient-to-br from-slate-950 via-slate-800 to-slate-950  overflow-hidden">
       {/* Scene Canvas Background */}
       <div className="fixed inset-0 z-0">
@@ -124,6 +122,50 @@ export default function StartupExpoForm() {
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-white-200 to-blue-400  ">
             Startup Expo Registration
           </h2>
+
+          <div className="text-slate-200 flex flex-col justify-center items-center text-center">
+            This form is for student startups from Government Engineering Colleges 
+            participating in the Startup Expo under the special institutional discount. 
+            Please go through the below instructions carefully.
+          </div>
+
+          <ul className="text-slate-300 text-sm border border-slate-700 rounded-lg p-4"> <strong>Booth Allocation<br/></strong><br/>
+            <li>• Single startup: 6 ft × 6 ft booth</li>
+            <li>• Two startups: Shared 6 ft × 6 ft booth</li>
+            <li>• Three startups: Shared 9 ft × 6 ft booth</li>
+            <li>• More than three startups: Additional booth space will be allotted proportionally as needed</li>
+          </ul>
+
+          <ul className = "text-slate-300 text-sm border border-slate-700 rounded-lg p-4"><strong>Referral Team (Mandatory for Group Discounts)<br/></strong><br/>
+            <li>• For institutions registering two or more startups, the first team to submit the form will be considered the Referral Team.</li>
+            <li>• This team’s information will be used to verify and group all other startups from the same college for applying the institutional discount.</li>
+          </ul>
+
+          <ul className = "text-slate-300 text-sm border border-slate-700 rounded-lg p-4"><strong>Instructions<br/></strong><br/>
+            <li>• Submit <strong>one form per startup team.</strong></li>
+            <li>• For teams availing group discounts, <strong>all other teams MUST enter the Referral Team Name</strong> exactly as submitted by the first team.</li>
+            <li>• Upload a Google Drive link with the payment screenshot and ID proof of all team members (public access required).</li>
+            <li>• Accommodation and meals are not included in the registration and <strong>will have separate charges.</strong></li>
+            <li>• Fill all text fields in <strong>CAPITAL LETTERS.</strong></li>
+          </ul>
+
+          <div className="text-slate-300 text-sm border border-slate-600 rounded-lg p-4 space-y-3">
+            <div className="font-medium">
+              For queries, contact:
+            </div>
+
+            <div className="flex flex-row justify-evenly gap-4">
+              <div className="flex items-center gap-2 border border-slate-600 rounded-md px-3 py-2">
+                <Phone className="size-5" />
+                <span>Aditya Mittal : 7060243777</span>
+              </div>
+
+              <div className="flex items-center gap-2 border border-slate-600 rounded-md px-3 py-2">
+                <Phone className="size-5" />
+                <span>Tushar Garg : 8168853283</span>
+              </div>
+            </div>
+          </div>
 
           {/* Grid layout for fields */}
           <div className="space-y-4">
@@ -323,12 +365,12 @@ export default function StartupExpoForm() {
               </div>
             </fieldset>
 
-            <div className="text-sm text-slate-300">
+            <div className="text-sm text-slate-300 border border-slate-700 rounded-lg p-4">
               <p>
                 <strong>Note:</strong> Please make the payment to the following
-                QR:
+                QR.
               </p>
-              <img className="flex align-middle w-50" src="/QR.jpeg" alt="Payment QR Code" />
+              <img className="flex align-middle max-h-45" src="/QR.jpeg" alt="Payment QR Code" />
             </div>
 
             <label className="flex flex-col gap-1 text-sm">
