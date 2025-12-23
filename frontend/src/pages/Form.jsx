@@ -323,6 +323,14 @@ export default function StartupExpoForm() {
               </div>
             </fieldset>
 
+            <div className="text-sm text-slate-300">
+              <p>
+                <strong>Note:</strong> Please make the payment to the following
+                QR:
+              </p>
+              <img className="flex align-middle w-50" src="/QR.jpeg" alt="Payment QR Code" />
+            </div>
+
             <label className="flex flex-col gap-1 text-sm">
               Payment Screenshot + ID Card Drive Link *
               <input
