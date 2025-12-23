@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import SceneCanvas from "../three/SceneCanvas";
+import { Link } from "react-router-dom";
 
 export default function Banner() {
   // const eventDate = new Date("2025-08-16T13:30:00+05:30");
@@ -43,7 +44,7 @@ export default function Banner() {
         transition={{ duration: 0.8, delay: 0.1 }}
         className="countdown-banner text-white text-center py-4 px-2 font-semibold shadow-lg mt-16 relative z-10 bg-gradient-to-r from-orange-400 via-purple-400 to-blue-400"
       >
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSciOMOvIU8SpowWYdyrFM9IRVmGZBI-w_OIlAE-lRzkjlo5Fg/viewform">Click here to register for Startup Expo</a>
+        <Link to= "/form">Click here to register for Startup Expo</Link>
       </motion.div>
     </section>
   );

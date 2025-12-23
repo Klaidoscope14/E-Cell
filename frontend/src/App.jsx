@@ -8,6 +8,7 @@ import Endeavors from "./pages/Endeavors";
 import Footer from "./sections/Footer";
 import AlumniRegistration from "./pages/AlumniRegistration";
 import Team from "./pages/Team";
+import Form from "./pages/Form";
 import { Gallery } from "./pages/Gallery";
 
 function AppContent() {
@@ -25,6 +26,7 @@ function AppContent() {
         <Route path="/endeavors" element={<Endeavors />} />
         <Route path="/team" element={<Team />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/form" element={<Form />} />
       </Routes>
 
       {location.pathname !== "/team" && <Footer />}
