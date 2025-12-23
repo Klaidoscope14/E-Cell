@@ -425,20 +425,12 @@ export default function StartupExpoForm() {
           <div className="pt-4">
             <button
               type="submit"
-              className="w-full md:w-auto px-6 py-2.5 rounded-full bg-indigo-500 hover:bg-indigo-400 text-sm font-semibold shadow-lg shadow-indigo-500/30 transition"
-            
-            >
+              className="w-full md:w-auto px-6 py-2.5 rounded-full bg-indigo-500 hover:bg-indigo-400 text-sm font-semibold shadow-lg shadow-indigo-500/30 transition">
               Submit
             </button>
           </div>
-          
         </form>
-
-       
-        
       </div>
     </div>
-
-    
   );
 }
