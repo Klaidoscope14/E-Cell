@@ -187,6 +187,13 @@ const Managers = [
     email: "mailto:pratichi_2401me07@iitp.ac.in"
   },
   {
+    name: "Vishal Singh",
+    title: "Events & Startup Relations",
+    image: "./VishalSingh.jpeg",
+    linkedinUrl: "linkedin.com/in/vishal-singh-142a81324",
+    email: "mailto:vishal_2401cb62@iitp.ac.in"
+  },
+  {
     name: "Srijan Sharma",
     title: "Events & Startup Relations",
     image: "./Srijan.jpg",
