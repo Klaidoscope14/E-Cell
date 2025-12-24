@@ -46,6 +46,7 @@ export default function StartupExpoForm() {
   e.preventDefault();
 
   const payload = new FormData();
+  payload.append("formType", "govt");
 
   // add normal fields
   Object.entries(formData).forEach(([key, value]) => {
@@ -61,7 +62,8 @@ export default function StartupExpoForm() {
 
   try {
     await fetch(
-      "https://script.google.com/macros/s/AKfycbzMPCwEhbwC7vWsZn0cj6kTYDVBSDN9wk0Q5TmAsqc_XbbomeswK7HsvS8GXt4tubSu/exec",
+      // "https://script.google.com/macros/s/AKfycbzMPCwEhbwC7vWsZn0cj6kTYDVBSDN9wk0Q5TmAsqc_XbbomeswK7HsvS8GXt4tubSu/exec",
+      import.meta.env.VITE_GOOGLE_SHEET_LINK,
       {
         method: "POST",
         body: payload,

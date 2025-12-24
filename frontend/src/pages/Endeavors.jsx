@@ -4,10 +4,34 @@ import SceneCanvas from "../three/SceneCanvas";
 
 const endeavorsData = [
   {
+    id: "startup-expo",
+    title: "Startup Expo",
+    description:
+      "The Startup Expo at E-Summit IIT Patna is a curated showcase where early-stage to growth-stage startups exhibit their products, ideas, and traction before investors, mentors, industry leaders, and the startup ecosystem. The Expo fosters visibility, validation, collaboration, and real market engagement.",
+    icon: "💰",
+    isLive: true,
+    color: "from-indigo-500 to-cyan-500",
+    accentColor: "indigo",
+    date: "Annual",
+    participants: "100+ Startups",
+    success: "10+ Funding",
+    category: "Flagship Showcase",
+    image: "bg-gradient-to-br from-indigo-500/20 to-cyan-500/20",
+    highlights: [
+      "Dedicated & Group Booths",
+      "Investor & Mentor Interaction",
+      "Startup Demos & Pitching",
+      "Promotion & Talent Acquisition"
+    ],
+  },
+
+
+  {
     id: "e-summit",
     title: "E-Summit",
     description: "E-Summit 2025, the flagship entrepreneurial event of IIT Patna, is a vibrant platform that brings together innovators, investors, startups, and industry leaders to foster entrepreneurship and business growth.",
     icon: "🚀",
+    isLive: false,
     color: "from-emerald-500 to-teal-500",
     accentColor: "emerald",
     date: "Annual",
@@ -23,6 +47,7 @@ const endeavorsData = [
     title: "Startin",
     description: "A campus startup expo where students pitch, validate, and market their ideas through live stalls and demos.",
     icon: "🎯",
+    isLive: false,
     color: "from-purple-500 to-violet-500",
     accentColor: "purple",
     date: "Annual",
@@ -38,6 +63,7 @@ const endeavorsData = [
     title: "Xplore",
     description: "Xplore is the freshers introduction to E-cell IIT Patna. Here the seed to innovate and create jobs is planted. This is the new beginning for the newcomers to discover, engage, and grow with the entrepreneurial ecosystem of the institute.",
     icon: "💡",
+    isLive: false,
     color: "from-orange-500 to-amber-500",
     accentColor: "orange",
     date: "Annual",
@@ -93,13 +119,13 @@ const FeaturedEndeavor = ({ endeavor, index }) => {
       {/* Enhanced Background Layers */}
       <div className={`absolute inset-0 ${endeavor.image} opacity-30`} />
       <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-br from-slate-900/80 via-slate-800/60 to-slate-900/80" />
-      
+
       {/* Content Container */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${isEven ? '' : 'lg:grid-flow-col-dense'}`}>
-          
+
           {/* Text Content */}
-          <motion.div 
+          <motion.div
             variants={fadeInLeft}
             className={`space-y-8 ${isEven ? '' : 'lg:col-start-2'}`}
           >
@@ -113,6 +139,23 @@ const FeaturedEndeavor = ({ endeavor, index }) => {
                 {endeavor.category}
               </span>
             </motion.div>
+
+            {/* LIVE BADGE */}
+        {endeavor.isLive && (
+          <motion.div
+            className="absolute top-4 right-4 z-20 flex items-center gap-2"
+            animate={{ opacity: [1, 0.4, 1] }}
+            transition={{ duration: 1.2, repeat: Infinity }}
+          >
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600" />
+            </span>
+            <span className="text-xs md:text-md lg:text-lg font-bold text-red-500 tracking-widest uppercase">
+              Live
+            </span>
+          </motion.div>
+        )}
 
             {/* Title */}
             <motion.h2
@@ -254,9 +297,29 @@ const EndeavorCard = ({ endeavor, index }) => {
       className="group cursor-pointer h-full"
     >
       <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-md border border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-500 h-full">
-        {/* Hover Overlay */}
-        <div className={`absolute inset-0 ${endeavor.image} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
         
+        {/* LIVE BADGE */}
+        {endeavor.isLive && (
+          <motion.div
+            className="absolute top-4 left-4 z-20 flex items-center gap-2"
+            animate={{ opacity: [1, 0.4, 1] }}
+            transition={{ duration: 1.2, repeat: Infinity }}
+          >
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600" />
+            </span>
+            <span className="text-xs font-bold text-red-500 tracking-widest uppercase">
+              Live
+            </span>
+          </motion.div>
+        )}
+
+        {/* Hover Overlay */}
+        <div
+          className={`absolute inset-0 ${endeavor.image} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+        />
+
         {/* Content */}
         <div className="relative z-10 p-8 h-full flex flex-col">
           {/* Header */}
@@ -264,7 +327,9 @@ const EndeavorCard = ({ endeavor, index }) => {
             <div className="text-5xl group-hover:scale-110 transition-transform duration-300">
               {endeavor.icon}
             </div>
-            <span className={`px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${endeavor.color} text-white`}>
+            <span
+              className={`px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${endeavor.color} text-white`}
+            >
               {endeavor.category}
             </span>
           </div>
@@ -289,7 +354,7 @@ const EndeavorCard = ({ endeavor, index }) => {
                 {endeavor.success}
               </div>
             </div>
-            
+
             <motion.div
               className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors"
               whileHover={{ scale: 1.1, rotate: 45 }}
@@ -302,6 +367,7 @@ const EndeavorCard = ({ endeavor, index }) => {
     </motion.div>
   );
 };
+
 
 const StatsSection = () => {
   const ref = useRef(null);
@@ -327,7 +393,7 @@ const StatsSection = () => {
       <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
       <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-700 opacity-5 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600 opacity-5 rounded-full blur-3xl"></div>
-      
+
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div variants={fadeInUp} className="text-center mb-20">
           <h2 className="text-4xl lg:text-6xl font-bold mb-4">
@@ -339,7 +405,7 @@ const StatsSection = () => {
             Transforming ideas into reality through collaborative innovation
           </p>
         </motion.div>
-        
+
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {stats.map((stat, index) => (
             <motion.div
@@ -370,11 +436,11 @@ const Endeavors = () => {
 
   useEffect(() => {
     if (!isAutoPlaying) return;
-    
+
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % endeavorsData.length);
     }, 5000);
-    
+
     return () => clearInterval(interval);
   }, [isAutoPlaying]);
 
@@ -395,7 +461,7 @@ const Endeavors = () => {
       <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-700 opacity-5 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600 opacity-5 rounded-full blur-3xl"></div>
 
-      
+
 
       {/* Content */}
       <div className="relative z-20">
@@ -407,7 +473,7 @@ const Endeavors = () => {
           className="relative min-h-screen flex items-center justify-center overflow-hidden"
         >
           <div className="absolute inset-0" />
-          
+
           <div className="relative z-10 text-center max-w-6xl mx-auto px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -420,24 +486,23 @@ const Endeavors = () => {
                   Our Endeavors
                 </span>
               </h1>
-              
+
               <p className="text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 Pioneering innovation and entrepreneurship at IIT Patna through transformative initiatives
               </p>
-              
+
               {/* Navigation Indicators */}
               <div className="flex justify-center gap-3">
                 {endeavorsData.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => handleIndicatorClick(index)}
-                    className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                      index === currentIndex ? 'bg-white scale-125' : 'bg-white/30 hover:bg-white/50'
-                    }`}
+                    className={`w-4 h-4 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-white scale-125' : 'bg-white/30 hover:bg-white/50'
+                      }`}
                   />
                 ))}
               </div>
-              
+
               {/* Current Endeavor Preview */}
               <AnimatePresence mode="wait">
                 <motion.div
@@ -466,7 +531,7 @@ const Endeavors = () => {
         {/* Grid Overview */}
         <section className="py-32 relative">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/60 via-slate-800/40 to-slate-900/60 backdrop-blur-sm" />
-          
+
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -484,7 +549,7 @@ const Endeavors = () => {
                 Discover the full spectrum of our entrepreneurial programs
               </p>
             </motion.div>
-            
+
             <div className="grid lg:grid-cols-3 gap-8">
               {endeavorsData.map((endeavor, index) => (
                 <EndeavorCard key={endeavor.id} endeavor={endeavor} index={index} />
