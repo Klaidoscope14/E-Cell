@@ -10,12 +10,17 @@ import AlumniRegistration from "./pages/AlumniRegistration";
 import Team from "./pages/Team";
 import Form from "./pages/Form";
 import { Gallery } from "./pages/Gallery";
+import StartupExpoForm from "./pages/StartupFormGroup";
+import StartupExpoForm1 from "./pages/StartupFormGroupStandard";
+import LandingFormPage from './pages/LandingFormPage'
+import ScrollToTop from "./ScrollToTop";
 
 function AppContent() {
   const location = useLocation();
   return (
     <>
       <Navbar />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,7 +31,10 @@ function AppContent() {
         <Route path="/endeavors" element={<Endeavors />} />
         <Route path="/team" element={<Team />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/form" element={<Form />} />
+        <Route path="/form" element={<LandingFormPage />} />
+        <Route path="/startup-expo-government-form" element={<Form />} />
+        <Route path="/startup-expo-group-form" element={<StartupExpoForm />} />
+        <Route path="/startup-expo-standard-form" element={<StartupExpoForm1 />} />
       </Routes>
 
       {location.pathname !== "/team" && <Footer />}
