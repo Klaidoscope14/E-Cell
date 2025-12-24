@@ -116,8 +116,7 @@ export default function StartupExpoForm() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
 } 
 
   return (
