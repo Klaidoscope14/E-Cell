@@ -48,17 +48,29 @@ export default function Alumni() {
 
   return (
     <main className="relative min-h-screen text-white overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-black ">
+      <div className="absolute inset-0 flex items-center justify-center z-[1] pointer-events-none">
+        <img 
+          src="/favicon.jpg" 
+          alt="Logo Background" 
+          className="w-3/4 max-w-[800px] opacity-10"
+        />
+      </div>
+
+      <div className="fixed top-0 left-0 w-full h-full z-[2] pointer-events-none">
+        <SceneCanvas />
+      </div>
+      
       {/* Background Layer - now absolute so it covers full scroll height */}
-      <div className="absolute inset-0 -z-10">
+      {/* <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-950 to-black" />
         <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-700 opacity-5 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600 opacity-5 rounded-full blur-3xl"></div>
+        <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-900 opacity-5 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-800 opacity-5 rounded-full blur-3xl"></div>
         <SceneCanvas />
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
           <img src="/favicon.jpg" alt="Logo Background" className="w-1/2 max-w-[500px]" />
         </div>
-      </div>
+      </div> */}
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-12 space-y-16  mt-10">
@@ -116,7 +128,7 @@ export default function Alumni() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-wrap justify-center gap-6"
+          className="flex flex-wrap justify-center gap-10"
         >
           {featuredAlumni.map((alumni) => (
             <AlumniCard
