@@ -33,7 +33,7 @@ export default function About() {
           className="text-4xl md:text-5xl font-bold mb-8 text-center"
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-purple-400 to-blue-400">
-            About E-Cell Alumni Relations
+            About E-Cell
           </span>
         </motion.h1>
         
@@ -44,17 +44,16 @@ export default function About() {
           className="max-w-3xl mx-auto bg-blue-900/20 p-8 rounded-lg backdrop-blur-sm"
         >
           <p className="text-xl leading-8 mb-6 text-blue-100">
-            The E-Cell Alumni Connect initiative is dedicated to bringing together past and present members of the Entrepreneurship Cell.
-            We aim to foster lifelong connections, celebrate achievements, and promote opportunities through this platform.
+            E-Cell is the Entrepreneurship Cell of IIT Patna. It is a student-run organization that aims to promote entrepreneurship and innovation on campus.
           </p>
           
           <p className="text-lg leading-7 mb-6 text-blue-200">
-            Whether you're a recent graduate or a seasoned founder, you'll find a community of like-minded innovators here.
+            E-Cell hosts a variety of events and initiatives to support the entrepreneurial ecosystem at IIT Patna.
           </p>
           
           <h2 className="text-2xl font-semibold mb-4 text-orange-300">Our Mission</h2>
           <p className="text-lg leading-7 mb-8 text-blue-100">
-            To create a vibrant ecosystem where E-Cell alumni can network, collaborate, and continue to grow professionally
+            To create a vibrant ecosystem where E-Cell members can network, collaborate, and continue to grow professionally
             while mentoring the next generation of entrepreneurs.
           </p>
           
@@ -64,7 +63,7 @@ export default function About() {
             <li>Mentorship opportunities with current E-Cell members</li>
             <li>Access to resources and entrepreneurial insights</li>
             <li>Platform to showcase your achievements and ventures</li>
-            <li>Reconnection with fellow alumni and old friends</li>
+            <li>Reconnection with fellow E-Cell members and old friends</li>
           </ul>
         </motion.div>
       </div>

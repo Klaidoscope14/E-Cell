@@ -4,10 +4,6 @@ import SceneCanvas from "../three/SceneCanvas";
 import { Link } from 'react-router-dom';
 import AlumniCard from "../components/AlumniCard";
 import AlumniHero from '../components/AlumniHero';
-import haren from "../assets/haren.png";
-import chirag from "../assets/chirag.png";
-import ram from "../assets/ram.png";
-import prashant from "../assets/prashant.png";
 
 export default function Alumni() {
   const [RegisterAlumni, setRegisterAlumni] = useState(false);
@@ -18,7 +14,7 @@ export default function Alumni() {
       name: "Haren Chelle",
       year: "Class of 2016",
       title: "Co-founder & CEO at\nPulse",
-      image: haren,
+      image: 'Alumni/haren.png',
       linkedinUrl: "https://www.linkedin.com/in/harenchelle/",
       email: "mailto:haren@pulsegen.io"
     },
@@ -27,7 +23,7 @@ export default function Alumni() {
       name: "Chirag Wadhera",
       year: "Class of 2019",
       title: "Co-founder & CTO at\nRevspot",
-      image: chirag,
+      image: 'Alumni/chirag.png',
       linkedinUrl: "https://www.linkedin.com/in/chiragw15/",
       email: "mailto:chirag@revspot.ai"
     },
@@ -36,7 +32,7 @@ export default function Alumni() {
       name: "Ram Agarwal",
       year: "Class of 2017",
       title: "Co-Founder & CFO at\nRaspa Pharma",
-      image: ram,
+      image: 'Alumni/ram.png',
       linkedinUrl: "https://www.linkedin.com/in/ram001/"
     },
     {
@@ -44,7 +40,7 @@ export default function Alumni() {
       name: "Prashant Baghel",
       year: "Class of 2017",
       title: "Co-founder at\nRadical Health",
-      image: prashant,
+      image: 'Alumni/prashant.png',
       linkedinUrl: "https://www.linkedin.com/in/baghelprashant/",
       email: "mailto:prashantbaghel123@gmail.com"
     }
