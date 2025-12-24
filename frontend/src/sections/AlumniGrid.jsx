@@ -285,7 +285,7 @@ const Managers = [
     email: "mailto:nallan_2401ai22@iitp.ac.in"
   },
   {
-    name: "Abhay Arora",
+    name: "Abhav Arora",
     title: "Production and Design",
     image: "./Managers/AbhayArora.jpg",
     linkedinUrl: "https://www.linkedin.com/in/abhavarora26",
