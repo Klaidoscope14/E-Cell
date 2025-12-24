@@ -24,8 +24,6 @@ const endeavorsData = [
       "Promotion & Talent Acquisition"
     ],
   },
-
-
   {
     id: "e-summit",
     title: "E-Summit",
