@@ -78,31 +78,45 @@ export default function StartupExpoForm() {
   }
 };
   
- if (submitted) {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white px-4">
-      <div className="fixed inset-0 z-0">
-        <SceneCanvas />
-      </div>
-      <div className="bg-slate-900/80 border border-slate-700 rounded-2xl shadow-2xl p-10 text-center max-w-md backdrop-blur-md">
-        <h1 className="text-3xl font-bold mb-4 text-blue-500">
-          Form Submitted Successfully!
-        </h1>
+  /* ================= SUCCESS PAGE ================= */
+  if (submitted) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white px-4">
+        <div className="fixed inset-0 z-0">
+          <SceneCanvas />
+        </div>
 
-        <p className="text-slate-300 mb-6">
-          Thank you for registering for the Startup Expo.
-        </p>
+        <div className="relative z-10 bg-slate-900/80 border border-slate-700 rounded-2xl shadow-2xl p-10 max-w-lg text-center backdrop-blur-md">
+          <h1 className="text-3xl font-bold text-green-400 mb-4">
+            Registration Successful 🎉
+          </h1>
 
-        <button
-          onClick={() => navigate("/")}
-          className="px-6 py-2 rounded-full bg-blue-500 hover:bg-indigo-400 font-semibold transition"
-        >
-          Go to Home
-        </button>
+          <p className="text-slate-300 mb-6">
+            Your submission has been received. Our team will verify the details
+            and contact you shortly.
+          </p>
+
+          <a
+            href="https://chat.whatsapp.com/J8eDWcsFe1LFxRQhH7ymjD?mode=hqrt3"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block px-6 py-3 rounded-full bg-green-500 hover:bg-green-400 font-semibold transition mb-4"
+          >
+            Join Official WhatsApp Group
+          </a>
+
+          <div>
+            <button
+              onClick={() => navigate("/")}
+              className="text-sm text-slate-400 hover:text-white underline"
+            >
+              Go to Home
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
 
 
 

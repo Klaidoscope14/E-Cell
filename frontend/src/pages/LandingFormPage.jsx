@@ -30,9 +30,76 @@ export default function StartupExpoInfo() {
           </div>
 
           {/* SECTION 1 */}
+          <section className="space-y-3 border-t border-slate-700 pt-6">
+            <h2 className="text-xl font-semibold text-indigo-400">
+              1. Startup Expo Registration – Standard Plan
+            </h2>
+            <p className="text-slate-300 text-sm leading-relaxed">
+              This category is for startups participating in the Startup Expo at
+              E-Summit 2026 under the Standard Plan with a dedicated exhibition
+              space.
+            </p>
+
+            <p className="text-sm text-slate-300">
+              Startups may opt for additional opportunities such as one-to-one
+              mentorship sessions, investor pitching slots, demo stage
+              presentations, promotional activities, and talent acquisition
+              drives.
+            </p>
+
+            <p className="text-sm text-slate-300">
+              All submissions will be verified by the organizing team, and
+              selected startups will be contacted with further instructions.
+            </p>
+
+            <div className="pt-2">
+              <Link
+                to="/startup-expo-standard-form"
+                className="inline-block px-5 py-2 rounded-full bg-indigo-500 hover:bg-indigo-400 text-sm font-semibold transition"
+              >
+                Register
+              </Link>
+            </div>
+          </section>
+
+          
+          {/* SECTION 2 */}
+          <section className="space-y-3 border-t border-slate-700 pt-6">
+            <h2 className="text-xl font-semibold text-indigo-400">
+              2. Startup Expo Group Registration – Incubation Centres / Startup Cells
+            </h2>
+            <p className="text-slate-300 text-sm leading-relaxed">
+              This category is exclusively for startups registering as a group
+              through an Incubation Centre or Startup Cell for E-Summit 2026,
+              IIT Patna.
+            </p>
+
+            <p className="text-sm text-slate-300">
+              Startups registered under this form will be grouped into a shared
+              exhibition booth. Booth size will depend on the total number of
+              startups registered under the same incubation centre.
+            </p>
+
+            <p className="text-sm text-slate-300">
+              Individual booths are <strong>not available</strong> under this
+              category. Booth layout and final allocation will be decided by the
+              organizing committee after registrations close.
+            </p>
+
+            <div className="pt-2">
+              <Link
+                to="/startup-expo-group-form"
+                className="inline-block px-5 py-2 rounded-full bg-indigo-500 hover:bg-indigo-400 text-sm font-semibold transition"
+              >
+                Register
+              </Link>
+            </div>
+          </section>
+
+          {/* SECTION 3 */}
           <section className="space-y-3">
             <h2 className="text-xl font-semibold text-indigo-400">
-              1. Startup Expo Registration – Government Colleges & Startup Cells
+              3. Startup Expo Registration – Government Colleges
             </h2>
             <p className="text-slate-300 text-sm leading-relaxed">
               This category is meant for student startups from Government
@@ -74,71 +141,8 @@ export default function StartupExpoInfo() {
             </div>
           </section>
 
-          {/* SECTION 2 */}
-          <section className="space-y-3 border-t border-slate-700 pt-6">
-            <h2 className="text-xl font-semibold text-indigo-400">
-              2. Startup Expo Group Registration – Incubation Centres / Startup Cells
-            </h2>
-            <p className="text-slate-300 text-sm leading-relaxed">
-              This category is exclusively for startups registering as a group
-              through an Incubation Centre or Startup Cell for E-Summit 2026,
-              IIT Patna.
-            </p>
 
-            <p className="text-sm text-slate-300">
-              Startups registered under this form will be grouped into a shared
-              exhibition booth. Booth size will depend on the total number of
-              startups registered under the same incubation centre.
-            </p>
-
-            <p className="text-sm text-slate-300">
-              Individual booths are <strong>not available</strong> under this
-              category. Booth layout and final allocation will be decided by the
-              organizing committee after registrations close.
-            </p>
-
-            <div className="pt-2">
-              <Link
-                to="/startup-expo-group-form"
-                className="inline-block px-5 py-2 rounded-full bg-indigo-500 hover:bg-indigo-400 text-sm font-semibold transition"
-              >
-                Register
-              </Link>
-            </div>
-          </section>
-
-          {/* SECTION 3 */}
-          <section className="space-y-3 border-t border-slate-700 pt-6">
-            <h2 className="text-xl font-semibold text-indigo-400">
-              3. Startup Expo Registration – Standard Plan
-            </h2>
-            <p className="text-slate-300 text-sm leading-relaxed">
-              This category is for startups participating in the Startup Expo at
-              E-Summit 2026 under the Standard Plan with a dedicated exhibition
-              space.
-            </p>
-
-            <p className="text-sm text-slate-300">
-              Startups may opt for additional opportunities such as one-to-one
-              mentorship sessions, investor pitching slots, demo stage
-              presentations, promotional activities, and talent acquisition
-              drives.
-            </p>
-
-            <p className="text-sm text-slate-300">
-              All submissions will be verified by the organizing team, and
-              selected startups will be contacted with further instructions.
-            </p>
-
-            <div className="pt-2">
-              <Link
-                to="/startup-expo-standard-form"
-                className="inline-block px-5 py-2 rounded-full bg-indigo-500 hover:bg-indigo-400 text-sm font-semibold transition"
-              >
-                Register
-              </Link>
-            </div>
-          </section>
+          
 
           {/* CONTACT */}
           <div className="border-t border-slate-700 pt-6 text-sm text-slate-300">
