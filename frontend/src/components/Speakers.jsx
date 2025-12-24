@@ -7,19 +7,19 @@ export default function Speakers() {
       name: "Anubhav Dubey",
       profession: "Founder of Chai Sutta Bar",
       body: "If you are confident about the execution. Don’t stress much on idea, Start implementing Now.",
-      img: "/AnubhavDubey.jpeg",
+      img: "Speakers/AnubhavDubey.jpeg",
     },
     {
       name: "Sandeep Jain",
       profession: "Founder of GeeksforGeeks",
       body: "EdTech startups are playing an increasing role in Indian education system with the growth of the Digital India story.",
-      img: "/SandeepJain.jpeg",
+      img: "Speakers/SandeepJain.jpeg",
     },
     {
       name: "Amit Lodha",
       profession: "Additional Director General of Police (ADGP), IPS Officer",
       body: "In the journey of life, the only way to achieve success is to keep moving forward with determination and resilience.",
-      img: "/amit.jpg",
+      img: "Speakers/amit.jpg",
     },
   ];
 
@@ -28,19 +28,19 @@ export default function Speakers() {
       name: "Dr. Tanu Jain",
       profession: "Former Bureaucrat, Founder of Tathastu ICS",
       body: "You are not behind in life. You are on your timeline. The only race that matters is the one with yourself.",
-      img: "/tanujain.jpeg",
+      img: "Speakers/tanujain.jpeg",
     },
     {
       name: "Dr. Praveen Sinha",
       profession: "CEO, Tata Power",
       body: "We are dedicated to becoming a customercentric utility by delivering innovative solutions, enhancing customer experiences and building a more sustainable energy future.",
-      img: "/praveensinha.jpg",
+      img: "Speakers/praveensinha.jpg",
     },
     {
       name: "Suresh Narasimha",
       profession: "Deep Tech Idea Stage Investor",
       body: "Failures are part of entrepreneurship. Good entrepreneurs take failure as part of the process and move on rather than engaging in self-pity.",
-      img: "/Suresh.jpg",
+      img: "Speakers/Suresh.jpg",
     },
   ];
 
