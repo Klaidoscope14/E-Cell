@@ -151,7 +151,7 @@ export default function StartupExpoForm() {
             <li>• Fill all text fields in <strong>CAPITAL LETTERS.</strong></li>
           </ul>
 
-          <div className="text-slate-300 text-sm border border-slate-600 rounded-lg p-4 space-y-3">
+          {/* <div className="text-slate-300 text-sm border border-slate-600 rounded-lg p-4 space-y-3">
             <div className="font-medium">
               For queries, contact:
             </div>
@@ -167,7 +167,7 @@ export default function StartupExpoForm() {
                 <span>Tushar Garg : 8168853283</span>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Grid layout for fields */}
           <div className="space-y-4">
