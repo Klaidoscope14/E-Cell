@@ -124,9 +124,16 @@ const Heads = [
     name: "Atharva Pawar",
     title: "Media & Public Relations",
     image: "./Heads/Atharva.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/atharva-pawar-a58b272b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl: "https://www.linkedin.com/in/atharva-pawar-a58b272b9",
     email: "mailto:atharva_2301ct06@iitp.ac.in"
   },
+  {
+    name: "Dikshant Khobragade",
+    title: "Media & Public Relations",
+    image: "./Heads/Dikshant.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/dikshant-khobragade-1b166727b/",
+    email: "mailto:dikshant_2302st02@iitp.ac.in"
+  }
 ];
 
 const Managers = [
