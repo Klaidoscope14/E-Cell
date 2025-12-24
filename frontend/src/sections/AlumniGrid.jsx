@@ -107,6 +107,13 @@ const Heads = [
     email: "mailto:ajay_2301mm03@iitp.ac.in"
   },
   {
+    name: "Malavath Saikumar",
+    title: "Sponsorship & Marketing",
+    image: "./Heads/MalavathSaikumar.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/saikumar-malavath-65796727b",
+    email: "mailto:saikumar_2303me14@iitp.ac.in"
+  },
+  {
     name: "Yuvan Vanapalli",
     title: "Production and Design",
     image: "./Heads/Yuvan.jpg",
