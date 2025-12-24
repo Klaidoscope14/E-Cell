@@ -278,6 +278,13 @@ const Managers = [
     email: "mailto:nallan_2401ai22@iitp.ac.in"
   },
   {
+    name: "Abhay Arora",
+    title: "Production and Design",
+    image: "./Managers/AbhayArora.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/abhavarora26",
+    email: "mailto:abhay_2401ai40@iitp.ac.in"
+  },
+  {
     name: "Sandeep Sisodiya",
     title: "Production and Design",
     image: "./Managers/Sandeep.jpg",
