@@ -58,11 +58,25 @@ const Heads = [
     email: "mailto:tushar_2301ee61@iitp.ac.in"
   },
   {
+    name: "Rishabh Singraur",
+    title: "Events & Startup Relations",
+    image: "./Singraur.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/rishabh-singraur-480485298/",
+    email: "mailto:rishabh_2302st04@iitp.ac.in"
+  },
+  {
     name: "Priyam Mishra",
     title: "Events & Startup Relations",
     image: "./Priyam.jpeg",
     linkedinUrl: "https://www.linkedin.com/in/priyam-mishra-423413308",
     email: "mailto:priyam_2302vl11@iitp.ac.in"
+  },
+  {
+    name: "Shreesh Polawar",
+    title: "Events & Startup Relations",
+    image: "./Shreesh.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/shreesh-polawar-bb56b830a/",
+    email: "mailto:shreesh_2301cs84@iitp.ac.in"
   },
   {
     name: "Tejas Jadhav",
@@ -93,13 +107,6 @@ const Heads = [
     email: "mailto:ajay_2301mm03@iitp.ac.in"
   },
   {
-    name: "Vansh Shrivastava",
-    title: "Production and Design",
-    image: "./Vansh.jpg",
-    linkedinUrl: "https://linkedin.com/in/vansh-shrivastava-a07866290",
-    email: "mailto:vansh_2301ec34@iitp.ac.in"
-  },
-  {
     name: "Yuvan Vanapalli",
     title: "Production and Design",
     image: "./Yuvan.jpg",
@@ -107,25 +114,11 @@ const Heads = [
     email: "mailto:yuvan_2301ee43@iitp.ac.in"
   },
   {
-    name: "N Sameeksha",
-    title: "Media & Public Relations",
-    image: "./Sameeksha.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/sameeksha-madhav-nagulwad-262776365",
-    email: "mailto:sameeksha_2301ec23@iitp.ac.in"
-  },
-  {
     name: "Atharva Pawar",
     title: "Media & Public Relations",
     image: "./Atharva.jpg",
     linkedinUrl: "https://www.linkedin.com/in/atharva-pawar-a58b272b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:atharva_2301ct06@iitp.ac.in"
-  },
-  {
-    name: "Riya Singh",
-    title: "Media & Public Relations",
-    image: "./Riya.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/riyasingh25",
-    email: "mailto:riya_2301ph25@iitp.ac.in"
   },
 ];
 
@@ -227,13 +220,6 @@ const Managers = [
     image: "./Abhishek.jpg",
     linkedinUrl: "https://www.linkedin.com/in/abhishek-kumar-0b0720285/",
     email: "mailto:abhishek_2401cb06@iitp.ac.in"
-  },
-  {
-    name: "Paarth Mandelia",
-    title: "Sponsorship & Marketing",
-    image: "./Paarth.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/paarth-mandelia-178236319/",
-    email: "mailto:paarth_2401me01@iitp.ac.in"
   },
   {
     name: "Saksham Thakur",
