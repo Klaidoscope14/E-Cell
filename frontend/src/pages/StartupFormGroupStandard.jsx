@@ -319,7 +319,7 @@ export default function StartupExpoStandardForm() {
                 : "bg-indigo-500 hover:bg-indigo-400"
               }`}
           >
-            {loading ? "Submitting..." : "Submit Registration"}
+            {loading ? "Submitting..." : "Submit"}
           </button>
 
         </form>
