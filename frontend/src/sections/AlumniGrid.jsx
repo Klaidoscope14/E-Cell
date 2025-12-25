@@ -285,6 +285,13 @@ const Managers = [
     email: "mailto:nallan_2401ai22@iitp.ac.in"
   },
   {
+    name: "Prateek Shree",
+    title: "Production and Design",
+    image: "./Managers/PrateekShree.jpeg",
+    linkedinUrl: "https://www.linkedin.com/in/prateek-shree-42a559334",
+    email: "mailto:prateek_2401cb53@iitp.ac.in"
+  },
+  {
     name: "Abhav Arora",
     title: "Production and Design",
     image: "./Managers/AbhayArora.jpg",
