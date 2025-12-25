@@ -178,8 +178,8 @@ export default function StartupExpoStandardForm() {
             </h3>
 
            <InputField label="Startup Name *" name="startupName" value={formData.startupName} onChange={handleChange} />
-        <InputField label="Institution Name *" name="institutionName" value={formData.institutionName} onChange={handleChange} />
-        <InputField label="Institution Email *" name="institutionEmail" value={formData.institutionEmail} onChange={handleChange} />
+        <InputField label="Institution/Organisation/Incubator Name *" name="institutionName" value={formData.institutionName} onChange={handleChange} />
+        <InputField label="Institution/Organisation/Incubator Official Email ID *" name="institutionEmail" value={formData.institutionEmail} onChange={handleChange} />
 
 
             <fieldset className="border border-slate-700 rounded-lg p-4">
@@ -297,7 +297,7 @@ export default function StartupExpoStandardForm() {
               onChange={handleChange}
               required
             />
-            I understand that startups registering under the IC Group Plan will be allocated a shared group booth, individual booths will not be provided, and the booth size will be decided based on the total number of startups registered under the same incubation centre.
+            I understand that startups registering under this Plan will be allocated a shared group booth, individual booths will not be provided, and the booth size will be decided based on the total number of startups registered under the same incubation centre.
           </label>
           <label className="flex items-start gap-2 text-sm">
             <input
@@ -319,7 +319,7 @@ export default function StartupExpoStandardForm() {
                 : "bg-indigo-500 hover:bg-indigo-400"
               }`}
           >
-            {loading ? "Submitting..." : "Submit Registration"}
+            {loading ? "Submitting..." : "Submit"}
           </button>
 
         </form>

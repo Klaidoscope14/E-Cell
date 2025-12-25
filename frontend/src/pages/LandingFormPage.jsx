@@ -49,7 +49,7 @@ export default function StartupExpoInfo() {
 
             <p className="text-sm text-slate-300">
               All submissions will be verified by the organizing team, and
-              selected startups will be contacted with further instructions.
+              all registered startups will be contacted with further instructions after verification.
             </p>
 
             <div className="pt-2">
@@ -66,11 +66,11 @@ export default function StartupExpoInfo() {
           {/* SECTION 2 */}
           <section className="space-y-3 border-t border-slate-700 pt-6">
             <h2 className="text-xl font-semibold text-indigo-400">
-              2. Startup Expo Group Registration – Incubation Centres / Startup Cells
+              2. Startup Expo Group Registration – Incubation Centres/Startup Cells/Startup Organisations
             </h2>
             <p className="text-slate-300 text-sm leading-relaxed">
               This category is exclusively for startups registering as a group
-              through an Incubation Centre or Startup Cell for E-Summit 2026,
+              through same incubation centre,startup cell or startup organisation for E-Summit 2026,
               IIT Patna.
             </p>
 
@@ -97,7 +97,7 @@ export default function StartupExpoInfo() {
           </section>
 
           {/* SECTION 3 */}
-          <section className="space-y-3">
+          <section className="space-y-3 border-t border-slate-700 pt-6">
             <h2 className="text-xl font-semibold text-indigo-400">
               3. Startup Expo Registration – Government Colleges
             </h2>
