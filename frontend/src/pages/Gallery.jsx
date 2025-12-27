@@ -57,7 +57,7 @@ export const Gallery = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-6xl md:text-7xl font-bold tracking-tight"
+            className="text-6xl md:text-7xl font-bold"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-purple-400 to-blue-400">
               Gallery
@@ -68,7 +68,7 @@ export const Gallery = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto py-1 md:py-6 font-semibold"
+              className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto py-1 md:py-6"
             >
               Snapshots of our memorable journey, where creativity and teamwork bring ideas to life and make an impact.
             </motion.p>
