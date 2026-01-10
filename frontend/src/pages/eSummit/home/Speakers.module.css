@@ -1,0 +1,224 @@
+
+.chopsicText {
+  font-family: "Chopsic", sans-serif;
+  font-weight: 700;
+}
+.stepsText {
+  font-family: "Steps", sans-serif;
+  font-weight: 700;
+}
+/* ===== SECTION ===== */
+.speakersSection {
+  position: relative;
+  padding: 4rem 1rem 5rem;
+  background: url("/images/golden.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/* Dark overlay */
+.speakersSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75); /* tune: 0.65–0.85 */
+  z-index: 0;
+}
+
+.speakersSection > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ===== HEADER ===== */
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 3rem;
+}
+
+.headerBox {
+  position: relative;
+  width: 420px;
+  height: 160px;
+  background: url("/images/header.png") center / contain no-repeat;
+  filter:
+    drop-shadow(0 0 25px rgba(255, 200, 0, 0.85))
+    drop-shadow(0 0 60px rgba(255, 170, 0, 0.6));
+}
+
+.headerText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Chopsic", sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.14em;
+
+  color: transparent;
+  background: linear-gradient(
+    8deg,
+    #b0944b 25%,
+    rgba(255, 255, 255, 0.85) 110%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.arrow {
+  width: 220px;
+  opacity: 0.9;
+}
+
+/* ===== CARDS ROW ===== */
+.cardsRow {
+  display: flex;
+
+  /* 🔑 do NOT center when scrolling */
+  justify-content: flex-start;
+
+  gap: 48px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  /* 🔑 THIS prevents first/last card from cutting */
+  padding-inline: 24px;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cardsRow::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/* wrapper for each card */
+.cardWrap {
+  position: relative;
+  width: 260px;
+  flex-shrink: 0;
+}
+
+/* your existing image */
+.cardImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* overlay that sits ON the icons in the PNG */
+.socials {
+  position: absolute;
+  bottom: 58px;        /* vertical position of icons */
+  left: 50%;
+
+  transform: translateX(-50%);
+  display: flex;
+  gap: 17px;           /* distance between LinkedIn & Twitter */
+
+  z-index: 2;
+}
+
+/* clickable icon area */
+.socials a {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .headerBox {
+    width: 360px;
+    height: 140px;
+  }
+
+  .arrow {
+    width: 160px;
+}
+
+  .cardsRow {
+    gap: 32px;
+  }
+
+  .cardImage {
+    width: 240px;
+  }
+}
+
+/* ===== MOBILE (HORIZONTAL SCROLL) ===== */
+@media (max-width: 768px) {
+  .sectionHeader {
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .headerBox {
+    width: 260px;
+    height: 120px;
+  }
+
+  .headerText {
+    font-size: 20px;
+    letter-spacing: 0.12em;
+  }
+
+  .arrow {
+    width: 90px;
+  }
+
+  .cardsRow {
+    justify-content: flex-start;
+    gap: 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0 1rem 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cardImage {
+    width: 220px;
+  flex: 0 0 auto;
+    scroll-snap-align: center;
+  }
+
+  .cardsRow::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .cardsRow::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 420px) {
+  .headerBox {
+    width: 220px;
+    height: 110px;
+  }
+
+  .arrow {
+    width: 70px;
+  }
+
+  .cardImage {
+    width: 200px;
+  }
+}
