@@ -1,101 +1,102 @@
+import SpeakerCard from "./SpeakerCard";
 import styles from "./Speakers.module.css";
 
 const speakers = [
   {
     name: "Dr. Buddha Chandrasekhar",
-    image: "/images/speakers/buddha.png",
+    image: "/home/speakers/tanu.png",
     linkedin: "https://linkedin.com/in/bhanu",
-    twitter: "https://twitter.com/bhanu",
+    title: "Title",
   },
   {
     name: "Varun Varunesh",
-    image: "/images/speakers/varun.png",
+    image: "/home/speakers/tanu.png",
     linkedin: "https://linkedin.com/in/chirag",
-    twitter: "https://twitter.com/chirag",
+    title: "Title",
   },
   {
     name: "Satyajit",
-    image: "/images/speakers/satyajit.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "Title",
   },
   {
     name: "Mausumi",
-    image: "/images/speakers/mausumi.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "Title",
   },
   {
     name: "haren",
-    image: "/images/speakers/haren.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "Title",
   },
   {
     name: "chirag",
-    image: "/images/speakers/chirag.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "Title",
   },
   {
     name: "sriparna",
-    image: "/images/speakers/sriparna.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "Title",
   },
   {
     name: "kamlesh",
-    image: "/images/speakers/kamlesh.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "Title",
   },
   {
     name: "suman",
-    image: "/images/speakers/suman.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "Title",
   },
   {
     name: "kadiyali",
-    image: "/images/speakers/srivatsa.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "Title",
   },
   {
     name: "bhanu",
-    image: "/images/speakers/bhanu.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "Title",
   },
   {
     name: "sambit",
-    image: "/images/speakers/sambit.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "Title",
   },
   {
     name: "Ashish",
-    image: "/images/speakers/ashish.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "Title",
   },
   {
     name: "nidhi",
-    image: "/images/speakers/nidhi.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "MENTOR",
   },
   {
     name: "siddhartha",
-    image: "/images/speakers/siddhartha.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "title",
   },
   {
     name: "Amit",
-    image: "/images/speakers/amit.png",
-    linkedin: "https://linkedin.com/in/ashish",
-    twitter: "https://twitter.com/ashish",
+    image: "/home/speakers/tanu.png",
+    linkedin: "Title",
+    title: "",
   },
 ];
 
@@ -103,7 +104,7 @@ const speakers = [
 export default function SpeakersSection() {
   return (
     <section className={styles.speakersSection}>
-      
+
       {/* ===== HEADER ===== */}
       <div className={styles.sectionHeader}>
         <img src="/images/arrowleft.png" alt="" className={styles.arrow} />
@@ -115,18 +116,24 @@ export default function SpeakersSection() {
         <img src="/images/arrowright.png" alt="" className={styles.arrow} />
       </div>
 
-     <div className={styles.cardsRow}>
-  {speakers.map((speaker) => (
+      <div className={styles.cardsRow}>
+        {speakers.map((speaker) => (
+          <SpeakerCard
+            imagePath={speaker.image}
+            name={speaker.name}
+            title={speaker.title}
+            linkedinUrl={speaker.linkedin}
+          />
+        ))}
+        {/* {speakers.map((speaker) => (
     <div key={speaker.name} className={styles.cardWrap}>
       
-      {/* Speaker card image */}
       <img
         src={speaker.image}
         alt={speaker.name}
         className={styles.cardImage}
       />
 
-      {/* Clickable overlays */}
       <div className={styles.socials}>
         <a
           href={speaker.linkedin}
@@ -135,16 +142,16 @@ export default function SpeakersSection() {
           aria-label={`${speaker.name} LinkedIn`}
         />
         <a
-          href={speaker.twitter}
+          href={speaker.title}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`${speaker.name} Twitter`}
+          aria-label={`${speaker.name} title`}
         />
       </div>
 
     </div>
-  ))}
-</div>
+  ))} */}
+      </div>
 
 
     </section>
