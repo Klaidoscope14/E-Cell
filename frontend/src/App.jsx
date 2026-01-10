@@ -14,12 +14,15 @@ import StartupExpoForm from "./pages/StartupFormGroup";
 import StartupExpoForm1 from "./pages/StartupFormGroupStandard";
 import LandingFormPage from './pages/LandingFormPage'
 import ScrollToTop from "./ScrollToTop";
+import ESummit from "./pages/eSummit/home/Page";
 
 function AppContent() {
   const location = useLocation();
+  const hideNavbarRoutes = ["/esummit"];
+  const hideFooterRoutes = ["/esummit","/team"];
   return (
     <>
-      <Navbar />
+      {!hideNavbarRoutes.includes(location.pathname) && <Navbar />}
       <ScrollToTop />
 
       <Routes>
@@ -35,9 +38,10 @@ function AppContent() {
         <Route path="/startup-expo-government-form" element={<Form />} />
         <Route path="/startup-expo-group-form" element={<StartupExpoForm />} />
         <Route path="/startup-expo-standard-form" element={<StartupExpoForm1 />} />
+        <Route path="/esummit" element={<ESummit />} />
       </Routes>
 
-      {location.pathname !== "/team" && <Footer />}
+       {!hideFooterRoutes.includes(location.pathname) && <Footer />}
     </>
   );
 }

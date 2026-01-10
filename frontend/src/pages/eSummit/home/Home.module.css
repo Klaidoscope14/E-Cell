@@ -1,0 +1,149 @@
+
+.chopsicText {
+  font-family: "Chopsic", sans-serif;
+  font-weight: 700;
+}
+.stepsText {
+  font-family: "Steps", sans-serif;
+  font-weight: 700;
+}
+/* .background {
+  width: 100%;
+
+  background-image: url('/home/banner.jpeg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  aspect-ratio: 1920 / 966.8;
+
+  overflow: hidden;
+} */
+
+
+.background2 {
+  min-height: 200vh;
+
+  /* BACK layer first, FRONT layer second */
+  background-image:
+  url('/home/backdrop2.png'),
+    url('/home/backdrop3.jpg');
+    
+
+  background-size:
+    cover,
+    cover ;
+
+  background-position:
+    center 50%,
+    top ;
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-attachment:
+    scroll,
+    scroll;
+}
+
+.background4 {
+  min-height: 200vh;
+  position: relative;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url('/home/backdrop4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  opacity: 1;
+}
+
+/* .background3 {
+  position: absolute;
+  inset: 0;
+  height: 75vh;              
+  margin: auto 0;            
+  background-image: url('/home/linear-chain.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%; 
+  background-position: center;
+  z-index: 0;
+  opacity: 1;
+} */
+
+.background3 {
+  position: absolute;
+  inset: 0;
+  background-image: url('/home/backdrop3.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.circleChain {
+  width: 350px;
+  height: 350px;
+
+  background-image: url("/home/circular-chain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.circle-chain h3 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.circle-chain p {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+
+.card {
+  background: linear-gradient(180deg, rgba(10,18,28,0.6), rgba(5,8,12,0.6));
+  border: 2px solid rgba(20,160,255,0.12);
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardMeta {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  padding: 8px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+  border-left: 3px solid rgba(20,160,255,0.35);
+  color: #fff;
+}
+
+.glimpseFrame {
+  max-width: 900px;
+  border: 3px solid rgba(20,160,255,0.18);
+  padding: 18px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+}
+
+/* tweak for reveal-section if you want slightly later reveal */
+.reveal-section {
+  will-change: transform, opacity;
+}
+
