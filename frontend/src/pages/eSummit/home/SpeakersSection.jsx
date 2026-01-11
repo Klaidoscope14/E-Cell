@@ -107,13 +107,13 @@ export default function SpeakersSection() {
 
       {/* ===== HEADER ===== */}
       <div className={styles.sectionHeader}>
-        <img src="assets/arrowleft.png" alt="" className={styles.arrow} />
+        <img src="/assets/arrowleft.png" alt="" className={styles.arrow} />
 
         <div className={styles.headerBox}>
           <span className={`${styles.headerText} ${styles.chopsicText}`}>SPEAKERS</span>
         </div>
 
-        <img src="assets/arrowright.png" alt="" className={styles.arrow} />
+        <img src="/assets/arrowright.png" alt="" className={styles.arrow} />
       </div>
 
       <div className={styles.cardsRow}>
