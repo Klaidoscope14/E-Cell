@@ -11,7 +11,7 @@
 .speakersSection {
   position: relative;
   padding: 4.5rem 1rem 5.5rem;
-  background: black url("assets/golden.png") center / cover no-repeat;
+  background: black url("/assets/golden.png") center / cover no-repeat;
   text-align: center;
   overflow: hidden;
 }
@@ -45,7 +45,7 @@
   position: relative;
   width: 420px;
   height: 160px;
-  background: url("assets/header.png") center / contain no-repeat;
+  background: url("/assets/header.png") center / contain no-repeat;
   filter:
     drop-shadow(0 0 28px rgba(255, 200, 0, 0.85))
     drop-shadow(0 0 65px rgba(255, 170, 0, 0.65));

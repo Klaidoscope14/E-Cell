@@ -37,7 +37,7 @@
   width: 420px;
   height: 160px;
 
-  background-image: url("assets/header.png");
+  background-image: url("/assets/header.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
