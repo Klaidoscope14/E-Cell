@@ -99,7 +99,7 @@
 .card {
   width: 260px;
   aspect-ratio: 3 / 4;
-  background: url("assets/card.png") center / contain no-repeat;
+  background: url("/assets/card.png") center / contain no-repeat;
   position: relative;
 
   filter:

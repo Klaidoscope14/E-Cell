@@ -28,11 +28,11 @@ export default function PastSpeakersSection() {
     <section className={styles.speakersSection}>
       {/* HEADER */}
       <div className={styles.sectionHeader}>
-        <img src="assets/arrowleft.png" className={styles.arrow} />
+        <img src="/assets/arrowleft.png" className={styles.arrow} />
         <div className={styles.headerBox}>
           <span className={`${styles.headerText} ${styles.chopsicText}`}>PAST SPEAKERS</span>
         </div>
-        <img src="assets/arrowright.png" className={styles.arrow} />
+        <img src="/assets/arrowright.png" className={styles.arrow} />
       </div>
 
       {/* SUBTEXT */}
@@ -54,7 +54,7 @@ export default function PastSpeakersSection() {
             {/* SOCIAL */}
             <div className={styles.socials}>
             <a href={s.linkedin} target="_blank">
-             <img src="assets/icons/linkedin.png" />
+             <img src="/assets/icons/linkedin.png" />
             </a>
           </div>
 
