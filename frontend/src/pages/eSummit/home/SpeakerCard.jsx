@@ -20,7 +20,7 @@ const SpeakerCard = ({
       />
 
       {/* Inner content*/}
-      <div className="relative z-10 h-[600px] px-16 pt-40 pb-20 flex flex-col items-center">
+      <div className="relative z-10 h-[600px] px-16 pt-32 pb-20 flex flex-col items-center">
 
         <div className="flex flex-col items-center gap-4">
 
@@ -49,7 +49,7 @@ const SpeakerCard = ({
 
           <p
             className="
-              h-[32px]
+              h-[72px]
               flex items-center justify-center
               text-sm uppercase
               tracking-widest text-orange-400

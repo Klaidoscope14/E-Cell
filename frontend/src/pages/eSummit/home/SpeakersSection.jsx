@@ -4,99 +4,99 @@ import styles from "./Speakers.module.css";
 const speakers = [
   {
     name: "Dr. Buddha Chandrasekhar",
-    image: "/home/speakers/tanu.png",
-    linkedin: "https://linkedin.com/in/bhanu",
-    title: "Title",
+    image: "/Speakers/budha.png",
+    linkedin: "https://www.linkedin.com/in/chandrasekharbudha/",
+    title: "Chief Coordinating Officer, AICTE, Ministry of Education, GOI",
   },
   {
     name: "Varun Varunesh",
-    image: "/home/speakers/tanu.png",
-    linkedin: "https://linkedin.com/in/chirag",
-    title: "Title",
+    image: "/Speakers/varun.jpeg",
+    linkedin: "https://www.linkedin.com/in/varunvarunesh/",
+    title: "CTO, Medkart",
   },
   {
-    name: "Satyajit",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "Title",
+    name: "Dr. Satyajit Singh",
+    image: "/Speakers/satyajit.png",
+    linkedin: "https://www.linkedin.com/in/satyajit-singh-619645321/",
+    title: "Director & MD, Ruban Group of Hospitals",
   },
   {
-    name: "Mausumi",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "Title",
+    name: "Dr. Mausumi Saha",
+    image: "/Speakers/saha.png",
+    linkedin: "https://www.linkedin.com/in/dr-mousumi-saha-33556948/",
+    title: "CEO, AIIMS Patna Incubation and Innovation Council",
   },
   {
-    name: "haren",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "Title",
+    name: "Haren Chelle",
+    image: "/Speakers/haren.jpg",
+    linkedin: "https://www.linkedin.com/in/harenchelle/",
+    title: "Co-Founder & CEO, Pulse",
   },
   {
-    name: "chirag",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "Title",
+    name: "chirag Wadhera",
+    image: "/Speakers/chirag.jpg",
+    linkedin: "https://www.linkedin.com/in/chiragw15/",
+    title: "Co-Founder & CTO, Revspot",
   },
   {
-    name: "sriparna",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "Title",
+    name: "dr. sriparna saha",
+    image: "/Speakers/sriparna.png",
+    linkedin: "https://www.linkedin.com/in/sriparna-saha-1a1338161/",
+    title: "Professor and Researcher, IIT Patna",
   },
   {
-    name: "kamlesh",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "Title",
+    name: "dr. kamlesh jha",
+    image: "/Speakers/kamlesh.png",
+    linkedin: "https://www.linkedin.com/in/kamlesh-jha-19576628?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    title: "Professor and Researcher, AIIMS Patna",
   },
   {
-    name: "suman",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "Title",
+    name: "suman jha",
+    image: "/Speakers/suman.png",
+    linkedin: "https://www.linkedin.com/in/thesumanjha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    title: "Founder, Jilo Health",
   },
   {
-    name: "kadiyali",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "Title",
+    name: "bhanu pratap",
+    image: "/Speakers/bhanu.jpg",
+    linkedin: "https://www.linkedin.com/in/bhanu-pratap-b2a334a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    title: "Co-Founder & CEO, Mediversal Healthcare",
+  },
+   {
+    name: "dr. kadiyali srivatsa",
+    image: "/Speakers/srivatsa.png",
+    linkedin: "https://www.linkedin.com/in/medifix/",
+    title: "Trustee, Dr Maya Foundation",
   },
   {
-    name: "bhanu",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "Title",
+    name: "dr. sambit kumar dash",
+    image: "/Speakers/sambit.png",
+    linkedin: "https://share.google/O8YgkW0NUyP4Qai8E",
+    title: "CEO, Ruban Group of Hospitals",
   },
   {
-    name: "sambit",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "Title",
+    name: "dr. Ashish kumar",
+    image: "/Speakers/ashish.jpg",
+    linkedin: "https://www.linkedin.com/in/dr-ashish-kumar-60031a15?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    title: "Professor & Scientist, ICMR-RMRIMS",
   },
   {
-    name: "Ashish",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "Title",
+    name: "dr. nidhi prasad",
+    image: "/Speakers/nidhi.jpeg",
+    linkedin: "https://www.linkedin.com/in/nidhi-prasad-514156137?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    title: "Professor, IGIMS",
   },
   {
-    name: "nidhi",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "MENTOR",
+    name: "siddhartha shankar",
+    image: "/Speakers/siddharth.png",
+    linkedin: "https://www.linkedin.com/in/sidshankar1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    title: "Co-founder & CEO, Humantics AI",
   },
   {
-    name: "siddhartha",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "title",
-  },
-  {
-    name: "Amit",
-    image: "/home/speakers/tanu.png",
-    linkedin: "Title",
-    title: "",
+    name: "Amit kumar",
+    image: "/Speakers/amit.png",
+    linkedin: "https://www.linkedin.com/in/amit-kumardropty?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    title: "Founder & Investor , Dropty",
   },
 ];
 
@@ -107,13 +107,13 @@ export default function SpeakersSection() {
 
       {/* ===== HEADER ===== */}
       <div className={styles.sectionHeader}>
-        <img src="/images/arrowleft.png" alt="" className={styles.arrow} />
+        <img src="assets/arrowleft.png" alt="" className={styles.arrow} />
 
         <div className={styles.headerBox}>
           <span className={`${styles.headerText} ${styles.chopsicText}`}>SPEAKERS</span>
         </div>
 
-        <img src="/images/arrowright.png" alt="" className={styles.arrow} />
+        <img src="assets/arrowright.png" alt="" className={styles.arrow} />
       </div>
 
       <div className={styles.cardsRow}>

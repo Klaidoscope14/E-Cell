@@ -1,4 +1,3 @@
-
 .chopsicText {
   font-family: "Chopsic", sans-serif;
   font-weight: 700;
@@ -7,6 +6,7 @@
   font-family: "Steps", sans-serif;
   font-weight: 700;
 }
+
 /* ===== EVENTS SECTION ===== */
 .eventsSection {
   display: flex;
@@ -37,7 +37,7 @@
   width: 420px;
   height: 160px;
 
-  background-image: url("/images/header.png");
+  background-image: url("assets/header.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -80,23 +80,38 @@
   opacity: 0.75;
 }
 
-/* ===== EVENT CARDS ROW ===== */
 .eventCards {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
   gap: 32px;
 
-  margin-top: 1.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  width: 100%;
+  max-width: 100vw;
+
+  padding-inline: 16px;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-/* Card image */
+.eventCards::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===== CARD ===== */
 .eventImage {
   width: 320px;
-  height: 100%;
-  object-fit: cover;
-}
+  height: auto;
 
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
 /* ===== MOBILE RESPONSIVENESS ===== */
 @media (max-width: 768px) {
   .eventsSection {
@@ -125,23 +140,24 @@
     opacity: 0.65;
   }
 
-  /* Cards row becomes horizontal scroll */
+  /* ✅ FIXED SCROLLABLE ROW */
   .eventCards {
-    width: 200px;
-    overflow-x: auto;
-    justify-content: flex-start;
+    width: 100%;                 /* ✅ NOT 200px */
+    display: flex;
     gap: 20px;
-    padding: 0 0.5rem;
-    scroll-snap-type: x mandatory;
-  }
 
-  .eventCard {
-    flex: 0 0 auto;
-    scroll-snap-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-inline: 16px;        /* prevents first card cutting */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
 
   .eventImage {
     width: 180px;
-    height: 200px;
+    height: auto;
+    flex-shrink: 0;              /* 🔑 critical */
+    scroll-snap-align: center;
   }
 }

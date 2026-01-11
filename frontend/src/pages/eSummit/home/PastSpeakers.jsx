@@ -3,21 +3,23 @@ import styles from "./PastSpeakers.module.css";
 const speakers = [
   {
     name: "DR. TANU JAIN",
-    photo: "/images/tanujain.jpeg",
+    photo: "/Speakers/tanujain.jpeg",
     linkedin: "https://www.linkedin.com/in/dr-tanu-jain-4aa28a131/?originalSubdomain=in",
-    twitter: "https://x.com/DrTanuJain1",
   },
   {
     name: "DR. SANDEEP JAIN",
-    photo: "/images/sandeepjain.jpeg",
-    linkedin: "https://linkedin.com/in/mukesh",
-    twitter: "https://twitter.com/mukesh",
+    photo: "/Speakers/sandeepjain.jpeg",
+    linkedin: "https://www.linkedin.com/in/sandeep-jain-/",
   },
   {
-    name: "Mukesh Bansal",
-    photo: "/images/mukesh.jpg",
-    linkedin: "https://linkedin.com/in/mukesh",
-    twitter: "https://twitter.com/mukesh",
+    name: "Anubhav Dubey",
+    photo: "/Speakers/anubhav.jpeg",
+    linkedin: "https://www.linkedin.com/in/anubhavdubey/",
+  },
+   {
+    name: "Suresh Narasimha",
+    photo: "/Speakers/Suresh.jpg",
+    linkedin: "https://www.linkedin.com/in/cocreator/",
   },
 ];
 
@@ -26,11 +28,11 @@ export default function PastSpeakersSection() {
     <section className={styles.speakersSection}>
       {/* HEADER */}
       <div className={styles.sectionHeader}>
-        <img src="/images/arrowleft.png" className={styles.arrow} />
+        <img src="assets/arrowleft.png" className={styles.arrow} />
         <div className={styles.headerBox}>
           <span className={`${styles.headerText} ${styles.chopsicText}`}>PAST SPEAKERS</span>
         </div>
-        <img src="/images/arrowright.png" className={styles.arrow} />
+        <img src="assets/arrowright.png" className={styles.arrow} />
       </div>
 
       {/* SUBTEXT */}
@@ -52,10 +54,7 @@ export default function PastSpeakersSection() {
             {/* SOCIAL */}
             <div className={styles.socials}>
             <a href={s.linkedin} target="_blank">
-             <img src="/images/icons/linkedin.png" />
-            </a>
-            <a href={s.twitter} target="_blank">
-             <img src="/images/icons/twitter.png" />
+             <img src="assets/icons/linkedin.png" />
             </a>
           </div>
 
